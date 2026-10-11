@@ -1,0 +1,1669 @@
+{
+  "kind": "exact_support_not_sampled_corpus",
+  "groups": [
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "cc3f080982e4af0959734d088364233714ff61fa97eaecbee3f578fc6cfad746",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "55023cc279c67951a617dd4e7332f1384a455905354dc50267ee0daaa74e4f77",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "5510f79fe308b38c3365eba444e0c57187cb592c851b8b3372f82c919b74190d",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "f2144629c9bd42ac38b32c29cb8dfd8b0584e6758deb6e4bd77a87eacaf529b0",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "ab29c18ed0e598be86400e00f9da8217585a8ec112bef47b7dada4afb6092238",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "03ecfc96cd46414767f556547bfa468073f40315157903e300fd990e9ddfef66",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "deb7f5b528c07bc1e490e92f43a61e17249385b45a4cf28d15056172ae7d2502",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "2515bfee6da383671c498ccd80b51fbd886b71063bdf8e46574eae0ee231496b",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "bbbd1f226e9ae50b343e05cbc6a49878a7851b0f16dd632ce73795fcf0dd932f",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "ac86715c800c9faf9d9fe15715ca9f65655b6dd9f120adabc0ff2702329fde76",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "4870eb20930353abfa25263b67c55b2b0644e0c520fd4ba57633c88f250cb26c",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "1b8f23cbba25dbf2a1eb68ccb54ea86d3931c363bfd9fa2006c037794f29918a",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "1e72305eca83c3c27c55db473642b45e396be723bf147a88d3f0e1c79b64cbd9",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "8e60fe24ef51008f24255add6296f8e48bee92345ba0a79301dd1fba4cdbd930",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "61d683a524b480700007826428b95fdadfab68c8ebd66d495ac6fe1d92577b39",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "83e727635fd6e0db0bff82066f3d22b3e800d84ee1974eb28f89620b19a0d896",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "2cb8180da6ae34cb8cf6c75e443026b4e6bc798e68571206ec98700a101c83aa",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "a34f7d8faddca2e6ad88fced256572ecc924163d46ea2acffea06e4df3efca2a",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "4ae7fcabdda1babd357938a259fc296550b1ad45ad98f338b3be16051c29d9db",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "a2d103b019dbe0eccf43e60829c544168ac8e352e6039ada1a872df15be46c8b",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "fe5e481729930cef8256e4fe9e9b329a5232977575efd089699ce37f289bb203",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "8141667ad99f0903cc174b75efb7714a4dfe6154ec25394b023d685f9798b3aa",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "084c44a08590111736b10f85d2f75fb44a35f85cbf0084a2e520c276420594e7",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "1691f00fa728e425ec2c9bc7299c379dcd4b431abbba22799f57e7684e270152",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "57b09f1cad6063a150ccf2a378e14d2a71995ebcb553c5bc594e3e5051120668",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "fdffb7a3a8c2999a1e539ab6e932bd1e13c50eebe8a5d8294c98c9ec7ba6443a",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "0fae1e2b360703bcb4f7311baa596cef358ca7a18c2f8a1df031cef1a48d0918",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "37d0502b094c47fac36f4d4f9aab2e56fde2ec16135e339c190d573daa6ccba2",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "297a5cdea11441d31d7a49d6d96d94874e854a23a466d5cdb9c3a40792050382",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "c3436f6afb9eaa65a97ca9f690c237e3cc8c6bd8bde0629e54c050a65e93d957",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "180a9725eb63712ffb8bcb934b5eaddbeb63cec83866d2d45701c9ee60ae5c4c",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "ea607df0f451017e17a41de220b31da08d22c99d751015817acaf51832d164d3",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "c2fde3b5524c5f62c65482ac0d8edcd5106f08bd4365991c3c2feb77db544287",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "112cb2ca18f8ce48600cf2b7e4c31589afefb9b5ce8066fd0b55279a6bf7ddbd",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "fa370fe641126de8963af249627b5b8f48d454ccc91a829e900fb0776a1fc1ee",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "c2ebd37793d8e6f1114490aa54abdc12ef8db4433e5c13ccba3e34d9b146df5b",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "18e93807bcdfb6b132326d693dbc2f9301dbd326daf1de6699099311c4c3ae4d",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "9ad9168187f20f611d69902b28bc6011d8cfb823bbc2f323d9f1494092933584",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "af95a6ee25a4b776ca52dd267c73d21c671749a5b5c7843faecb69db33f5a5a9",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "9b9d64fa743b21a1035603ff962601aa9e648bf9ea21bcf1bda9b098b3e1ff1f",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "f1483e9c6eb250f5073fe995fa5e81c4d247e725daae0632b39164238ad36c32",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "20608484b82de4eebe8bf84780442e80ff0beda55a019892162532b0f83ffc3e",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "9e427d2d01bebdac240066ada25ec62320cc301b72eb2c151726aeda4903336a",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "4878b158ab5c0e454b6e951fe1333f6831080fd598a45b5b050a5edd703890bc",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "c7c60c1f40560392aae96d8be9bbf589080432dc81e1967005de64c176ff99ab",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "b2bda65dd7798ca5118ca7328fbfe26f87f1c3a5a4fc629bb05e86f276c480b6",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "d808ad2b07ff035d748c19484fc779ec452bc3ab73e7eb5ce731b4881b7fef82",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "a10131cfce1a17be7014bfae130564fbfe751664847efed31a3eca40193e6e93",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "1cc949626539b019bd82e84845c3ff4ca969dfee71fff1dc7ac5c61ba0a68a20",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "b7d1e1895cbfe1e6a202f698392870cce95441b7bb2089aaeaf3ef387044d9e7",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "f8cb99bf8ad8c530f8667d24a76e439f4cdfabca76c1e750e1778083cd7d98c3",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "7bceb3623cb3214cdc246bb77fd2441e07fff22110ba12bdecf9fe360a35d39d",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "b4dbb50f26aa14b6ec142fa349399df92879e28824723d690161f93c780b761f",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "dd42a21af75fbc3cc7d851f799a16506ff7df5cac7813bb31ca73c8d0a67f79f",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "7d63de05e509da17528ec480ad7f9298c9ce4d4986345214b6f3f259afafaa04",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "df00f8e09f2b994d4a43d79bdae2da7e19a3bbfc9dd77d9f4263e42f74a70b10",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "5dddfae9792065876a0b789b1a4729ae6dfff310fc11086e5268cd7e48c8be83",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "8a9c41832fb6b4a340b9a2c1ff8c63959d21b7c2cf26de43de5a8626f9f90a3b",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "cd79525a4ee7d573f436bac6ea6cf91298a4c315c82a25a9f688acd9a76f1213",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "a7a44af3d3a17172b643795bb17a037634a2ad911673ac0945cb8cb1bee03657",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "5be78afa59845d713c6f3436a809f38d43c49a1c297368311f838dba35229953",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "533d66f16fabb660f7601cecc3c399f9a14cd67daa14372634b5326560ff8150",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "ee986df05a5d26b10bd37821e951d514d5c2000ca2b8c6b4c6354662c3f5288f",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": -1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "7329488f2841c62a8a398cda165fc0288d706bb2791aed43f6d41f0010b7f4be",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "78ae81a688ed7919a566c198de7aa5984f6796e196b670d6e3577766a17b3512",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "d97f141432a6cf3bdc13226608d46d5b590b9feaf0092c6d60619994d5b9cde8",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "cc599728caf41a1e608910eb5559e16d7a72c29d8b9f69425cb2a8758c71d99e",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "4a0a8cc31a21c198ee7dab4c0f38b983aca28a5b40b137a7d89bbe54ebfb7135",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "e7332c245a2e48c65cb4470d020839af7e7941c85e42d6a05df0fc1a708dc874",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "ddcec1da0ed9199cb54c4ea47652187e0525c6c2869b0c73d7df203c52d3a9b5",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "79ad59fe5506535c7e010c6dfdee47bcc4e04fb9cdc16c69ef2c96dd98d6505b",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "a7cc77c92a9c6ce8c7685972107042d2ab1d74e9cea07958caac174577fe31c8",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "7040b719eb3c050463755956d3a050d23a36b3f758b2f7e17ccecf51590de32c",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "b0cf565dd57546addfd86ccee620880988a238ecdaea415f18bba5f7ffaa169d",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "33573818cd0823084bb6ac4e596a365a6398d61ba5916edeb714659ca9acda58",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "5de36c96737d1e4df3cdfe53e2c3d44481cdd742cfab16eb126d6b2f9efc4375",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "e1abe20532d6d9af5fbbbffc107ac0cc2d4a3e9e427e2a43995baf49491ffd89",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "fc6ae6cdb6882021965c9d64319464d8741d9a2989d39eb6d80527bec7b7a5cb",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "c3625b4e8d9c0646d929698f80d1e627e0f6ca00c2129e3ec3ff5bbad8f7e441",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "d76a890fda098808eabcae66ab4e60fb5f6f8736a9a1d2edfc6768e00245b4ba",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "6f7402466eb5479a02f94d4ae148cedc19753f5f0af9ec9fcb8bd2ea97e68856",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "6aae2220aeb68ff5985d1d24a343c5023c341252946e27218d26a3038f41059f",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "4f46c06ddc03815e32698718ae401f6bfa8ee1464b125183edd873827023cbbc",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "d64e82e77d76841ed41be4b967bfff959da8f376d50d72427b8020430df97c25",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "8dc63d16a3c0f6b8d1a780a6032e8172406d5a938e4114b4650816f1c31aa9da",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "3e9f671bce12054d0853d772daffb68869c44814f453fe211f904e29358c00f1",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "80863a8c57384240b8d112f62b1b48c401db40ed34c03e534ecb19707248ce31",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "3c2a1e5dd135acf297032aa9a562dc8727e34e2d3e7cd74fa511177c15e48be1",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "5ca349594edc77a301002321cb53b394825229e2e2c3e8e92da3ad14b0588cb5",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "048b265168b9fd4394857ee5b67b7eba0739d2381bd794d2d4c3e3673158e735",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "fdcdc854ee0d93c52df19e9366d248a89b27341db7ef90f5a57fa29dd9ae6b73",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "dd09b371ad72772949964b961d8978928c4048268b2dfdbaccb7e4daf6e92fc4",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "6471f24c6585fd41d988fe0c3f9cfa932380d50d380bc542bac381983b01ab9b",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "94c887e25bdb74a24f95af0010b59c31ebe4ff9007a52962592b268317fb14c2",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "b65137beb2424a3328f496cdcadd692d0035a7ca8d6662eea11d207f18c354cb",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": -1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "850133015aef1c937e258833be8a7abb0edc03c5636e6121a94bc98aa535c186",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "2d7cb8474f508d9bcad247cb9d3158158d43552f576a49af6264b6233ef01668",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "bdf3639665eaf81f870f3188b8287ac37c4255e17bf972fdb7099cfc2675da40",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "f81ac5ec8cde688ac44c1b8d9a53d879bf127d3870a0c139520e68cbb5166735",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "7023efa9db10274700b0601cdf7e10907684eb34ddcf94e7a438ab8e19561f03",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "81f05ee1906fdd63a9feb8f4ebfc5dec3d2fb6fe8e33e17116e06b00f67fe5d3",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "068f50deb5c476733b9598fd15002201af0e91f44ba0d2eaff0359229478b52e",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "59a562dff0f1767f536a7d57f2e818936c6e4634ecbc622c16a294c181427971",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "954cf54dae6949a1c326563282dadc8c3e099b02526b185cea79d626f53b412e",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "bf48c9dc93449c059cee8b49e3386f2149682bc670594bf64dad8ee75123a897",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "ad08ac31f0b49047a3aab2a85c89b5c28b96c10498e2e6565327891d2d08ff45",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "a25cff9590824e772b5a79dfffc2d48fe5db183af94bea8a458bee441e1dc713",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "e79bab0040cdae46ab9b5791c934008870a5462ca151fdbbac706f55cb2f104d",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "9f65ea5696c1c1bf97ee7bb008bcf243de57543f995cad21dcb51a23d672cb89",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "4c4786b8dc35ed863c15c708e0613f67c8b8cbf99249a9700e515afd859215a2",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "4d88989c2ee4028e10641c150f809bf1e653f24e8281823730d8ee3c1750278a",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "merge_c",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "efb2204e1585dad7264769dedea45bde9154a6a574ecd4c5b26ea8f056fccfb5",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "b8771324e8ee9f942fa45c445090f0bc90edabd5c0a4ed6620231fc00a8fa966",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "b48203f5fe2ea58e47a573da562cb5538666c003d676e91ae1d138e6afd03c98",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "c8fb28fbdc241a898081970edb5dc38201ed37393f273799c570b49f6f6339a6",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "d40e741a7601c4b07a9ac8af1ad292b3282865229ecf4ebd3ee32efc8d8955d5",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "5aa43c1585a59b936a3574134303b4e10f34cb35f15d5cf9ed6ef99176b6a539",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "15a0767ec36a4dd7aeb76e6dfdb5d9753f51252005d93829d1fa630904725bbd",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "fdcb542b8021043522b013554b3814a74e81be1d74d66b15b0f7e99e88a9bb23",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 30,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "93bf9ee541e47be2875a8a0eb79fb3ccd06a39940a863e41082ce97f83d32601",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 0
+      },
+      "public_sha256": "d24cc05843c7b6979ded3f9bc6426cb54d0a728738d98400878099fb175a284d",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 90,
+        "lead": 1
+      },
+      "public_sha256": "aebe5b7b78f869b4ccd18ac409e681ccba6beb1526afa5b37cdde7591a77f620",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 0
+      },
+      "public_sha256": "4883dd8311f4f33c3181bfef03e1a66b3e3211fb1fd8425781bf521505db6b47",
+      "mass": "1/128",
+      "split": "test"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 120,
+        "lead": 1
+      },
+      "public_sha256": "b47741f02d2c3a114b3426d8e7653dd0a3393037732022dc0c6a1e1ba5798205",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 0
+      },
+      "public_sha256": "0c1c2abff407935ed511114fc3adfb9ff88995b8daa0504028ea6c35f2838698",
+      "mass": "1/128",
+      "split": "validation"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 150,
+        "lead": 1
+      },
+      "public_sha256": "861c498607972f0fde4f4c5e41dc97cac900b8f5e85e50d8afcc303f98b2c54c",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 0
+      },
+      "public_sha256": "655f77a4b2aa514a99afde11666e6ce5d09c39192838de07027b6e95edcba92e",
+      "mass": "1/128",
+      "split": "train"
+    },
+    {
+      "coordinates": {
+        "x": 1,
+        "h": 1,
+        "topology": "join_d",
+        "d": 45,
+        "c": 180,
+        "lead": 1
+      },
+      "public_sha256": "67ba74fc7dc491cff8d8da90480da8c7f50bf372f0e8a6fe8b43f54d6911205c",
+      "mass": "1/128",
+      "split": "validation"
+    }
+  ]
+}
