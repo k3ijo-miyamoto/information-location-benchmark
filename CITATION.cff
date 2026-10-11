@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the associated paper."
+title: "Information Location Benchmark"
+type: software
+authors:
+  - family-names: Miyamoto
+    given-names: Yukitake
+date-released: 2026-10-11
+repository-code: "https://github.com/k3ijo-miyamoto/information-location-benchmark"
+license: MIT
