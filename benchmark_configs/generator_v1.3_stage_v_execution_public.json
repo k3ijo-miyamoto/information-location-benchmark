@@ -1,0 +1,160 @@
+{
+  "version": "generator13-stage-v-execution-0.1",
+  "stage": "V",
+  "development_only": true,
+  "cells": [
+    "IS0-O1",
+    "IS0-O2",
+    "IS1-O1",
+    "IS1-O2",
+    "IS2-O1",
+    "IS2-O2",
+    "IS3-O1",
+    "IS3-O2"
+  ],
+  "corpora_per_cell": 6,
+  "N": [
+    128,
+    512,
+    2048,
+    8192
+  ],
+  "initializations": 3,
+  "families": [
+    "tabular",
+    "static",
+    "temporal",
+    "static_size_control"
+  ],
+  "run_order": [
+    "cell",
+    "corpus",
+    "N",
+    "init",
+    "family"
+  ],
+  "runs": 2304,
+  "accepted_train_samples": 393216,
+  "optimizer_steps": 19584000,
+  "example_presentations": 626688000,
+  "epochs": 100,
+  "batch_size": 32,
+  "loss": "BCEWithLogits mean",
+  "final_train_loss": "sample-weighted online BCE across epoch100",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-8,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "parameter_groups": 1,
+    "include_biases": true,
+    "constant_lr": true
+  },
+  "fresh_model_per_N": true,
+  "warm_start": false,
+  "early_stopping": false,
+  "class_weights": false,
+  "augmentation": false,
+  "dropout": false,
+  "gradient_clipping": false,
+  "device": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cu130",
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+    "dtype": "float64",
+    "deterministic": true,
+    "tf32": false,
+    "cublas_workspace": ":4096:8",
+    "threads": 1,
+    "fallback": false
+  },
+  "sampler": {
+    "address": "construction-world-simulator|g13/stage_v/draw|{decimal_seed}|{decimal_draw_index}|{purpose}",
+    "purposes": [
+      "coordinate",
+      "ra",
+      "rb"
+    ],
+    "encoding": "UTF-8",
+    "digest": "SHA256",
+    "bytes": "all32",
+    "byte_order": "big",
+    "draw_index_origin": 0,
+    "accepted_index_origin": 0,
+    "rejection_suffix": "|reject|{decimal_retry_starting_at_1}",
+    "rejection": "reject value >= 2**256 - (2**256 % denominator); accept value % denominator",
+    "coordinate_bound": 128,
+    "support_order": "generator.v13.support()",
+    "fraction_sampling": "integer < exact numerator",
+    "route_before_outcome": true,
+    "balancing": false,
+    "retry_corpora": false
+  },
+  "shuffle": {
+    "namespace": "g13/stage_v/shuffle/{cell}/{corpus}/{init}/{N}/{epoch}",
+    "seed_derivation": "native_seeds_v13.derive: SHA256 prefix + namespace; first8 big endian & (2**63-1)",
+    "epoch_indices": "0..99",
+    "permutation": "torch.randperm(N, generator=CPU Generator.manual_seed(seed))",
+    "family_omitted": true
+  },
+  "corpus": {
+    "format": "one compact JSON object per accepted record, UTF-8 sorted keys compact separators newline",
+    "atom_id": "4*support_index+2*ra+rb",
+    "atoms": 512,
+    "public_templates": 128,
+    "prefix_membership": "first N accepted records",
+    "canonical_digest": "SHA256 sorted compact JSON Dataset.model_dump(mode=json), UTF-8 plus final newline",
+    "template_digest": "SHA256 sorted compact shape/dtype JSON newline followed by little-endian float64 or int64 bytes",
+    "evaluator_metadata_in_inputs": false
+  },
+  "evaluator": {
+    "groups_per_partition": 32,
+    "weight": "1/32",
+    "partitions": [
+      "validation",
+      "test"
+    ],
+    "posterior": "exact Fraction branching; historical enumerate_atoms cross-check",
+    "brier": "mean(p*(1-q)**2+(1-p)*q**2)",
+    "regret": "mean((q-p)**2)",
+    "opportunity": "81*k**2",
+    "normalized_regret": "regret/opportunity",
+    "recovery": "(.25-brier)/opportunity",
+    "ece": "10 fixed left-closed/right-open bins; last includes 1; empty bins zero",
+    "log_loss_clip": 1e-12,
+    "regret_negative_tolerance": 1e-12,
+    "recovery_excess_tolerance": 1e-10
+  },
+  "inr": "(.5*NR128+NR512+NR2048+.5*NR8192)/3",
+  "independent_unit": "corpus mean of three paired initialization contrasts",
+  "allocation": "generator_v13_learner_plan_v01.required_corpora: exactly six sample SDs, ddof=1, no means/C0",
+  "replay_ordinals_zero_based": [
+    0,
+    1152,
+    2303,
+    577,
+    1154
+  ],
+  "replay_rule": "first/middle/last logical run plus first Static IS1 and Temporal IS2",
+  "replay_requirement": "bitwise final state digest, predictions, evaluation, final train loss",
+  "batch_parity": {
+    "atol": 1e-9,
+    "rtol": 1e-8,
+    "report": "generator_v1.3_stage_v_batch_parity_v0.1.json"
+  },
+  "output_root": "benchmark_outputs/generator13/stage-v-v01",
+  "overwrite": false,
+  "resume": "skip successful hash-validated immutable results only; failed/interrupted runs block; no automatic retry",
+  "stage_c_reserved": 0,
+  "stage_c_runs": 0,
+  "protocol_edits_after_first_run": false,
+  "publication_note": "Publication copy: machine-local paths and unrelated deferred-work bookkeeping removed; scientific protocol fields retained."
+}
