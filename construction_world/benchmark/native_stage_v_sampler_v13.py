@@ -1,0 +1,1 @@
+"""Deterministic Stage V sampler."""
