@@ -1,0 +1,1 @@
+"""Information-location benchmark package."""
