@@ -1,0 +1,1173 @@
+{
+  "version": "generator13-exact-audit-0.1",
+  "decision": "G13-A",
+  "generator_version": "1.3.0",
+  "distribution": "information-structure-joint-1",
+  "design": "generator13-information-design-0.2",
+  "cells": [
+    {
+      "regime": "IS0",
+      "opportunity": "O1",
+      "k": "1/128",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 256,
+      "posterior_min": {
+        "exact": "55/128",
+        "float": 0.4296875
+      },
+      "posterior_max": {
+        "exact": "73/128",
+        "float": 0.5703125
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 0.9856876793586129,
+        "XcT": 0.9856876793586127,
+        "XcH": 0.9856876793586127,
+        "full": 0.9856876793586161,
+        "P": 0.9856876793586161
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0143123206413871,
+        "I_Y_T_given_Xc": 2.220446049250313e-16,
+        "I_Y_H_given_XcT": -3.4416913763379853e-15,
+        "I_Y_TH_given_Xc": -3.219646771412954e-15
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "XcT": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "XcH": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "full": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "P": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 0.9856876793586129,
+        "XcT": 0.9856876793586127,
+        "XcH": 0.9856876793586127,
+        "full": 0.9856876793586161,
+        "P": 0.9856876793586161
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "XcT": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "XcH": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "full": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "P": {
+          "exact": "73/128",
+          "float": 0.5703125
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "topology": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "history": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "full": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 256,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS0",
+      "opportunity": "O2",
+      "k": "1/64",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 256,
+      "posterior_min": {
+        "exact": "23/64",
+        "float": 0.359375
+      },
+      "posterior_max": {
+        "exact": "41/64",
+        "float": 0.640625
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 0.9421631690835506,
+        "XcT": 0.9421631690835535,
+        "XcH": 0.9421631690835535,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.05783683091644942,
+        "I_Y_T_given_Xc": -2.886579864025407e-15,
+        "I_Y_H_given_XcT": -1.6653345369377348e-15,
+        "I_Y_TH_given_Xc": -4.551914400963142e-15
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "XcT": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "XcH": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "full": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "P": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 0.9421631690835506,
+        "XcT": 0.9421631690835535,
+        "XcH": 0.9421631690835535,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "XcT": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "XcH": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "full": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "P": {
+          "exact": "41/64",
+          "float": 0.640625
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "topology": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "history": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "full": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 256,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O1",
+      "k": "1/128",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 512,
+      "posterior_min": {
+        "exact": "55/128",
+        "float": 0.4296875
+      },
+      "posterior_max": {
+        "exact": "73/128",
+        "float": 0.5703125
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9856876793586127,
+        "XcH": 1.0,
+        "full": 0.9856876793586161,
+        "P": 0.9856876793586161
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.014312320641387322,
+        "I_Y_H_given_XcT": -3.4416913763379853e-15,
+        "I_Y_TH_given_Xc": 0.01431232064138388
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "XcH": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "full": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "P": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9856876793586127,
+        "XcH": 1.0,
+        "full": 0.9856876793586161,
+        "P": 0.9856876793586161
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "XcH": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "full": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "P": {
+          "exact": "73/128",
+          "float": 0.5703125
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "history": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "full": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 512,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O2",
+      "k": "1/64",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 512,
+      "posterior_min": {
+        "exact": "23/64",
+        "float": 0.359375
+      },
+      "posterior_max": {
+        "exact": "41/64",
+        "float": 0.640625
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9421631690835535,
+        "XcH": 1.0,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.057836830916446536,
+        "I_Y_H_given_XcT": -1.6653345369377348e-15,
+        "I_Y_TH_given_Xc": 0.05783683091644487
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "XcH": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "full": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "P": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9421631690835535,
+        "XcH": 1.0,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "XcH": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "full": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "P": {
+          "exact": "41/64",
+          "float": 0.640625
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "history": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "full": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 512,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O1",
+      "k": "1/128",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 256,
+      "posterior_min": {
+        "exact": "55/128",
+        "float": 0.4296875
+      },
+      "posterior_max": {
+        "exact": "73/128",
+        "float": 0.5703125
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 1.0,
+        "XcH": 0.9856876793586127,
+        "full": 0.985687679358616,
+        "P": 0.985687679358616
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.0,
+        "I_Y_H_given_XcT": 0.014312320641383991,
+        "I_Y_TH_given_Xc": 0.014312320641383991
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcH": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "full": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "P": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 1.0,
+        "XcH": 0.9856876793586127,
+        "full": 0.985687679358616,
+        "P": 0.985687679358616
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcH": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "full": {
+          "exact": "73/128",
+          "float": 0.5703125
+        },
+        "P": {
+          "exact": "73/128",
+          "float": 0.5703125
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "history": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "full": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 256,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O2",
+      "k": "1/64",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 256,
+      "posterior_min": {
+        "exact": "23/64",
+        "float": 0.359375
+      },
+      "posterior_max": {
+        "exact": "41/64",
+        "float": 0.640625
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 1.0,
+        "XcH": 0.9421631690835535,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.0,
+        "I_Y_H_given_XcT": 0.05783683091644487,
+        "I_Y_TH_given_Xc": 0.05783683091644487
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcH": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "full": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "P": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 1.0,
+        "XcH": 0.9421631690835535,
+        "full": 0.9421631690835551,
+        "P": 0.9421631690835551
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcH": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "full": {
+          "exact": "41/64",
+          "float": 0.640625
+        },
+        "P": {
+          "exact": "41/64",
+          "float": 0.640625
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "history": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "full": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "interaction": {
+          "exact": "0",
+          "float": 0.0
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 256,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O1",
+      "k": "1/128",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 512,
+      "posterior_min": {
+        "exact": "57/128",
+        "float": 0.4453125
+      },
+      "posterior_max": {
+        "exact": "79/128",
+        "float": 0.6171875
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9913533102170093,
+        "XcH": 0.9971803988942651,
+        "full": 0.9856336775792454,
+        "P": 0.9856336775792454
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.008646689782990657,
+        "I_Y_H_given_XcT": 0.005719632637763983,
+        "I_Y_TH_given_Xc": 0.01436632242075464
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "4047/16384",
+          "float": 0.24700927734375
+        },
+        "XcH": {
+          "exact": "255/1024",
+          "float": 0.2490234375
+        },
+        "full": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        },
+        "P": {
+          "exact": "4015/16384",
+          "float": 0.24505615234375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9913533102170093,
+        "XcH": 0.9971803988942651,
+        "full": 0.9856336775792454,
+        "P": 0.9856336775792454
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "71/128",
+          "float": 0.5546875
+        },
+        "XcH": {
+          "exact": "17/32",
+          "float": 0.53125
+        },
+        "full": {
+          "exact": "143/256",
+          "float": 0.55859375
+        },
+        "P": {
+          "exact": "143/256",
+          "float": 0.55859375
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "49/16384",
+          "float": 0.00299072265625
+        },
+        "history": {
+          "exact": "1/512",
+          "float": 0.001953125
+        },
+        "full": {
+          "exact": "81/16384",
+          "float": 0.00494384765625
+        },
+        "interaction": {
+          "exact": "1/1024",
+          "float": 0.0009765625
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 512,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      },
+      "gate_failures": []
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O2",
+      "k": "1/64",
+      "total_mass": "1",
+      "prevalence": {
+        "exact": "1/2",
+        "float": 0.5
+      },
+      "support_group_count": 128,
+      "atomic_path_count": 512,
+      "posterior_min": {
+        "exact": "25/64",
+        "float": 0.390625
+      },
+      "posterior_max": {
+        "exact": "47/64",
+        "float": 0.734375
+      },
+      "mixed_label_group_mass": "1",
+      "entropy_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9652016987500649,
+        "XcH": 0.9886994082884978,
+        "full": 0.9412038341760994,
+        "P": 0.9412038341760994
+      },
+      "mi_bits": {
+        "I_Y_Xc": 0.0,
+        "I_Y_T_given_Xc": 0.034798301249935104,
+        "I_Y_H_given_XcT": 0.023997864573965466,
+        "I_Y_TH_given_Xc": 0.05879616582390057
+      },
+      "bayes_brier": {
+        "empty": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "Xc": {
+          "exact": "1/4",
+          "float": 0.25
+        },
+        "XcT": {
+          "exact": "975/4096",
+          "float": 0.238037109375
+        },
+        "XcH": {
+          "exact": "63/256",
+          "float": 0.24609375
+        },
+        "full": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        },
+        "P": {
+          "exact": "943/4096",
+          "float": 0.230224609375
+        }
+      },
+      "bayes_log_loss_bits": {
+        "empty": 1.0,
+        "Xc": 1.0,
+        "XcT": 0.9652016987500649,
+        "XcH": 0.9886994082884978,
+        "full": 0.9412038341760994,
+        "P": 0.9412038341760994
+      },
+      "bayes_accuracy": {
+        "empty": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "Xc": {
+          "exact": "1/2",
+          "float": 0.5
+        },
+        "XcT": {
+          "exact": "39/64",
+          "float": 0.609375
+        },
+        "XcH": {
+          "exact": "9/16",
+          "float": 0.5625
+        },
+        "full": {
+          "exact": "79/128",
+          "float": 0.6171875
+        },
+        "P": {
+          "exact": "79/128",
+          "float": 0.6171875
+        }
+      },
+      "gains": {
+        "current": {
+          "exact": "0",
+          "float": 0.0
+        },
+        "topology": {
+          "exact": "49/4096",
+          "float": 0.011962890625
+        },
+        "history": {
+          "exact": "1/128",
+          "float": 0.0078125
+        },
+        "full": {
+          "exact": "81/4096",
+          "float": 0.019775390625
+        },
+        "interaction": {
+          "exact": "1/256",
+          "float": 0.00390625
+        }
+      },
+      "nuisance_invariance_pass": true,
+      "full_public_posterior_equality_pass": true,
+      "canonical_validation_pass": true,
+      "canonical_weighted_paths_checked": 512,
+      "adapter_parity_pass": true,
+      "split_support_pass": true,
+      "split": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      },
+      "gate_failures": []
+    }
+  ],
+  "total_positive_mass_atomic_paths": 3072,
+  "atomic_path_bound": 4096,
+  "unique_physical_coordinate_outcome_states": 512,
+  "public_groups_per_cell": 128,
+  "gate_failures": [],
+  "actions": {
+    "sampled_benchmark_worlds": 0,
+    "seeds_reserved": 0,
+    "learner_runs": 0,
+    "experts_contacted": 0
+  },
+  "next_task": "design_and_freeze_learner_benchmark_and_sample_size_precision_plan"
+}
