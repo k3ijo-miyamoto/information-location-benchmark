@@ -1,0 +1,236 @@
+{
+  "status": "pass",
+  "group_counts": {
+    "validation": 32,
+    "train": 64,
+    "test": 32
+  },
+  "core_blocks": 8,
+  "contexts_per_block": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "no_crossing": true,
+  "all_public_axis_values_per_partition": true,
+  "cell_results": [
+    {
+      "regime": "IS0",
+      "opportunity": "O1",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      }
+    },
+    {
+      "regime": "IS0",
+      "opportunity": "O2",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      }
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O1",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      }
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O2",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      }
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O1",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      }
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O2",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      }
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O1",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/16384"
+        }
+      }
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O2",
+      "partitions": {
+        "train": {
+          "groups": 64,
+          "mass": "1/2",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "validation": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        },
+        "test": {
+          "groups": 32,
+          "mass": "1/4",
+          "prevalence": "1/2",
+          "full_gain": "81/4096"
+        }
+      }
+    }
+  ],
+  "occupancy": [
+    {
+      "total_future_draws": 250,
+      "expected_observed_groups": 109.9844387436047,
+      "expected_duplicate_fraction": 0.5600622450255812,
+      "split_infeasibility_upper_bound": 7.752844704253207e-07
+    },
+    {
+      "total_future_draws": 500,
+      "expected_observed_groups": 125.46437150482085,
+      "expected_duplicate_fraction": 0.7490712569903583,
+      "split_infeasibility_upper_bound": 3.869886187060386e-14
+    },
+    {
+      "total_future_draws": 1000,
+      "expected_observed_groups": 127.94977021980027,
+      "expected_duplicate_fraction": 0.8720502297801997,
+      "split_infeasibility_upper_bound": 3.7440047502653604e-28
+    },
+    {
+      "total_future_draws": 2000,
+      "expected_observed_groups": 127.99998028882173,
+      "expected_duplicate_fraction": 0.9360000098555892,
+      "split_infeasibility_upper_bound": 3.504392892502396e-56
+    }
+  ]
+}
