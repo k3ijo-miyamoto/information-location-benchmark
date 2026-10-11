@@ -1,0 +1,89 @@
+{
+  "version": "generator13-learner-architecture-0.1",
+  "tier": "G13-primary",
+  "sizing": "analytical_only_target_blind",
+  "adapter_source_hash": "de5745d4fc3940fc5281289aceb210f5e95e02b60b865aa44918196092d3ef88",
+  "dimensions": {
+    "slots": 128,
+    "active_records": 49,
+    "fields": 73,
+    "categories": 26,
+    "tables": 18,
+    "states": 8,
+    "sequence_records": 7,
+    "streams": 2,
+    "content_channels": 2575,
+    "edge_types": 146,
+    "edge_width": 4
+  },
+  "content_formula": "73*(1 numeric + 8 state + 26 category)+18 table+1 mask+1 cutoff = 2575",
+  "families": {
+    "tabular": {
+      "hidden": 21,
+      "components": {
+        "content": 20608,
+        "endpoints": 516,
+        "reference_projection": 2344,
+        "fusion": 43029,
+        "hidden": 462,
+        "output": 22
+      },
+      "parameters": 66981
+    },
+    "static": {
+      "hidden": 24,
+      "components": {
+        "content": 61824,
+        "edge_types": 584,
+        "messages": 2592,
+        "fusion": 1176,
+        "output": 25
+      },
+      "parameters": 66201
+    },
+    "temporal": {
+      "hidden": 24,
+      "components": {
+        "content": 61824,
+        "edge_types": 584,
+        "messages": 2592,
+        "fusion": 1752,
+        "output": 25,
+        "gru": 3600
+      },
+      "parameters": 70377
+    },
+    "static_size_control": {
+      "hidden": 25,
+      "components": {
+        "content": 64400,
+        "edge_types": 584,
+        "messages": 2800,
+        "fusion": 1275,
+        "output": 26
+      },
+      "parameters": 69085
+    }
+  },
+  "capacity_ratios": {
+    "C1": 1.0117822993610368,
+    "C2": 1.0187015994789028
+  },
+  "candidate_comparison": {
+    "tabular_hidden20": 64889,
+    "tabular_hidden21": 66981,
+    "static_control_hidden25": 69085,
+    "static_control_hidden26": 71981
+  },
+  "selection": "Static h24 anchor; closest Tabular fusion width and Static control width from positive integer neighborhood; no performance outcomes",
+  "message_steps": 2,
+  "gru_layers": 1,
+  "tabular_content_width": 8,
+  "tabular_reference_width": 8,
+  "tabular_endpoint_embedding_width": 4,
+  "tabular_endpoint_embedding_rows": 129,
+  "padding_row_counted": true,
+  "normalization": "fixed units; numeric state1 divided by7200, booleans unchanged; no fitted scaling",
+  "no_attention": true,
+  "no_dropout": true
+}
