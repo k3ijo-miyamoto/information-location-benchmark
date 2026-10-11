@@ -1,0 +1,5 @@
+case,run_id,role,final_recovery_pct,content_death,first_death_step
+D1,IS2-O1/c0/n8192/i1/tabular,selected poor,-0.9957641821866101,True,12417
+D2,IS2-O1/c0/n2048/i1/tabular,selected good comparator,94.84940843063994,False,
+D3,IS2-O1/c0/n8192/i0/temporal,selected poor,-0.0006068408877996981,True,2742
+D4,IS2-O1/c5/n8192/i0/temporal,selected good comparator,98.44564365368659,False,
