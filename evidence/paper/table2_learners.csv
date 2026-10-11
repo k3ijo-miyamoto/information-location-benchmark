@@ -1,0 +1,5 @@
+family,parameters,organization,content_width,history_available
+tabular,66981,flattened public records + learned endpoints + MLP,8,True
+static,66201,two-layer message passing,24,True
+static_size_control,69085,two-layer message passing; wider size control,25,True
+temporal,70377,two-layer message passing + ordered GRU,24,True
