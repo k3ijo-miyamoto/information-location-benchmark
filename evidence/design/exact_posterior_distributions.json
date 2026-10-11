@@ -1,1 +1,110 @@
-{}
+{
+  "status": "PASS",
+  "plan_commit": "5c341b79ad14cb926e4b02be0fcb34a3347ea9f5",
+  "cells": [
+    {
+      "regime": "IS0",
+      "opportunity": "O1",
+      "posterior_mass": {
+        "55/128": "1/2",
+        "73/128": "1/2"
+      },
+      "bayes_brier": "4015/16384",
+      "gain": "81/16384",
+      "bayes_accuracy": "73/128",
+      "entropy_bits": 0.985687679358613
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O1",
+      "posterior_mass": {
+        "55/128": "1/2",
+        "73/128": "1/2"
+      },
+      "bayes_brier": "4015/16384",
+      "gain": "81/16384",
+      "bayes_accuracy": "73/128",
+      "entropy_bits": 0.985687679358613
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O1",
+      "posterior_mass": {
+        "55/128": "1/2",
+        "73/128": "1/2"
+      },
+      "bayes_brier": "4015/16384",
+      "gain": "81/16384",
+      "bayes_accuracy": "73/128",
+      "entropy_bits": 0.985687679358613
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O1",
+      "posterior_mass": {
+        "57/128": "1/2",
+        "63/128": "1/4",
+        "79/128": "1/4"
+      },
+      "bayes_brier": "4015/16384",
+      "gain": "81/16384",
+      "bayes_accuracy": "143/256",
+      "entropy_bits": 0.9856336775792461
+    },
+    {
+      "regime": "IS0",
+      "opportunity": "O2",
+      "posterior_mass": {
+        "23/64": "1/2",
+        "41/64": "1/2"
+      },
+      "bayes_brier": "943/4096",
+      "gain": "81/4096",
+      "bayes_accuracy": "41/64",
+      "entropy_bits": 0.9421631690835511
+    },
+    {
+      "regime": "IS1",
+      "opportunity": "O2",
+      "posterior_mass": {
+        "23/64": "1/2",
+        "41/64": "1/2"
+      },
+      "bayes_brier": "943/4096",
+      "gain": "81/4096",
+      "bayes_accuracy": "41/64",
+      "entropy_bits": 0.9421631690835511
+    },
+    {
+      "regime": "IS2",
+      "opportunity": "O2",
+      "posterior_mass": {
+        "23/64": "1/2",
+        "41/64": "1/2"
+      },
+      "bayes_brier": "943/4096",
+      "gain": "81/4096",
+      "bayes_accuracy": "41/64",
+      "entropy_bits": 0.9421631690835511
+    },
+    {
+      "regime": "IS3",
+      "opportunity": "O2",
+      "posterior_mass": {
+        "25/64": "1/2",
+        "31/64": "1/4",
+        "47/64": "1/4"
+      },
+      "bayes_brier": "943/4096",
+      "gain": "81/4096",
+      "bayes_accuracy": "79/128",
+      "entropy_bits": 0.9412038341760999
+    }
+  ],
+  "source_sha256": {
+    "construction_world/generator/v13.py": "45c71bc25fbc884231329f174a07a84db18d0c4e666d736ea5fe3c6c013ffc47",
+    "construction_world/generator/v13_exact.py": "f905dec606d8b2d9367100f8d396733cc580b268d8988e934e2ac5221d15a7d9",
+    "generator_v1.3_exact_population_audit_v0.1.json": "d825c50e8b7291b7c877899f10d097e9c1494e2e4e5e5418ba512619a5297d48",
+    "generator_v1.3_adapter_audit_v0.1.json": "11943d17fc53ff94045ec00c9138c21994791c7b369d303b0af13a428d6c530d"
+  }
+}
