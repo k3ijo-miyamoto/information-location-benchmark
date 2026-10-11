@@ -1,3 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "information-location-benchmark"
 version = "0.1.0"
+description = "Synthetic benchmark for controlled information-location studies"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.10,<3"]
+
+[project.optional-dependencies]
+paper = ["matplotlib==3.10.8"]
+benchmark = ["torch==2.13.0", "matplotlib==3.10.8"]
+test = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+include = ["construction_world*"]
