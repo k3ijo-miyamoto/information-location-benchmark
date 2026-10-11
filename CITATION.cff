@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this benchmark, please cite the associated paper."
+message: "If you use this benchmark, please cite the associated preprint."
 title: "Information Location Benchmark"
 type: software
 authors:
@@ -8,3 +8,13 @@ authors:
 date-released: 2026-10-11
 repository-code: "https://github.com/k3ijo-miyamoto/information-location-benchmark"
 license: MIT
+
+preferred-citation:
+  type: article
+  title: "Information Location under Matched Predictive Opportunity"
+  authors:
+    - family-names: Miyamoto
+      given-names: Yukitake
+  year: 2026
+  doi: "10.5281/zenodo.23297061"
+  url: "https://doi.org/10.5281/zenodo.23297061"
