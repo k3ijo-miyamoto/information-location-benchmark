@@ -1,35 +1,66 @@
 # Information Location Benchmark
 
-Clean reproducibility package for the study **Information Location under Matched Predictive Opportunity**.
+Publication-clean reproducibility package for **Information Location under Matched Predictive Opportunity**.
 
-This repository contains only publication-facing code, frozen configurations, compact evidence, and selected diagnostic states needed to inspect or reproduce the paper's claims. It intentionally excludes private authoring history and unrelated project materials.
+This repository contains only paper-facing code, frozen configurations, compact evidence, and selected diagnostic summaries. Its Git history starts with publication assembly rather than the private research/authoring history.
 
-## What can be reproduced
+## Study in one paragraph
 
-The public artifact is organized in three levels:
+The benchmark asks whether specified learning systems behave differently when an equally predictable binary target is determined by a current observation, dependency topology, or ordered history. In IS0--IS2, the full posterior marginal is identical within each opportunity level while the posterior-determining public statistic changes. IS3 is a separate topology-history interaction extension that matches Bayes Brier opportunity but not the full posterior marginal. All learner organizations receive the same public semantic facts.
 
-1. **Paper verification (CPU-friendly).** Recompute the exact finite-support design checks, verify the six development-stage INR contrasts, regenerate the paper tables/figures from committed evidence, and confirm that the planned confirmatory stage was not executed.
-2. **Selected diagnostic replay.** Inspect the selected D1/D3 pathway-collapse evidence, frozen one-step boundaries, and bounded learning-rate interventions from published frozen states.
-3. **Benchmark rerun components.** Generator 1.3, public-fact adapters, specified learner implementations, exact evaluator, deterministic seed registry, sampler, and frozen training protocol are included so the development benchmark can be rerun with suitable compute.
+## Quick paper verification
 
-The paper-level reproduction path does **not** require rerunning all 2,304 learner runs.
+The core paper checks are CPU-only and use the committed evidence:
 
-## Scientific scope
+```bash
+python scripts/verify_paper_evidence.py
+python scripts/reproduce_tables.py
+```
 
-The benchmark controls which audited public statistic determines a known binary posterior. In the three pure-relocation conditions, the full posterior marginal is held fixed while the posterior-determining statistic is moved among current state, dependency topology, and ordered history. A fourth topology-history interaction condition matches Bayes Brier opportunity but not the full posterior marginal.
+For the publication figures:
 
-All learner organizations have access to the same public semantic facts. This does not imply identical tensors, effective capacity, conditioning, or optimization difficulty.
+```bash
+python -m pip install -r requirements-paper.txt
+python scripts/reproduce_figures.py
+```
 
-Reported learner comparisons are development-stage results for the specified learner-optimizer systems. Selected D1/D3 diagnostics are local post-hoc mechanism probes; they are not estimates of mechanism prevalence or family-wide causal effects.
+See [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-## Repository status
+## Evidence layers
 
-This is the publication-clean repository. The first public build is being assembled and verified before it is cited from the arXiv manuscript.
+- `evidence/design/` — exact finite-support/posterior and adapter/split evidence.
+- `evidence/stage_v/` — development-stage primary analysis and Stage C allocation decision.
+- `evidence/paper/` — paper table/figure inputs.
+- `evidence/diagnostics/` — selected post-hoc diagnostic and intervention summaries.
 
-- Paper title: *Information Location under Matched Predictive Opportunity*
+The primary learner results are development-stage results for the specified learner-optimizer systems. Stage C was not executed. The selected diagnostic cases are local post-hoc probes and do not establish mechanism prevalence or family-wide causal effects.
+
+## Benchmark implementation
+
+The repository includes Generator 1.3, public-fact adapters, the specified tabular/static/temporal learner implementations, exact expected-risk evaluation, deterministic corpus sampling, the frozen seed registry, and the official Stage V training implementation.
+
+A single frozen run can be rerun with:
+
+```bash
+python scripts/rerun_single_official.py \
+  --cell IS2-O1 --corpus 0 --N 8192 --init 1 --family tabular
+```
+
+The official training implementation intentionally requires the certified original CUDA environment; paper-level verification does not.
+
+## Reproduction levels
+
+1. **Paper verification:** exact design and reported aggregate values from committed evidence; CPU-friendly.
+2. **Selected diagnostics:** committed selected-case summaries and publication-facing trajectory data.
+3. **Official training rerun:** source/configuration is provided; requires the pinned official GPU/software environment for the strict path.
+
+## Scope boundaries
+
+This repository does not claim that one representation family is universally superior, that the observed rankings isolate causal architecture effects, or that selected diagnostic cases explain the whole benchmark. The construction-inspired vocabulary is synthetic and does not establish real construction-domain performance.
+
+## Metadata
+
 - Author: Yukitake Miyamoto
 - Affiliation: Independent Researcher, Japan
-- Confirmatory Stage C: not executed
 - License: MIT
-
-See `docs/REPRODUCIBILITY.md` and `docs/EVIDENCE_SCOPE.md` once the initial publication bundle is complete.
+- Confirmatory Stage C: not executed
