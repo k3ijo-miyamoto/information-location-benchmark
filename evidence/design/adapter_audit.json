@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": {
+    "alpha_rename_source_order_absolute_origin": 128,
+    "tabular_roundtrip_and_invariance": 128,
+    "static_roundtrip_and_invariance": 128,
+    "temporal_roundtrip_and_invariance": 128,
+    "static_temporal_same_facts": 128
+  },
+  "record_slots": 128,
+  "active_records": 49,
+  "primitive_columns": 73,
+  "chain_lengths": [
+    7,
+    7
+  ],
+  "learner_runs": 0
+}
