@@ -30,6 +30,6 @@ This is the publication-clean repository. The first public build is being assemb
 - Author: Yukitake Miyamoto
 - Affiliation: Independent Researcher, Japan
 - Confirmatory Stage C: not executed
-- License: **not yet specified**
+- License: MIT
 
 See `docs/REPRODUCIBILITY.md` and `docs/EVIDENCE_SCOPE.md` once the initial publication bundle is complete.
