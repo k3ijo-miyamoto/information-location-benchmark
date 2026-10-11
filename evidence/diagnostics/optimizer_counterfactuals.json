@@ -1,0 +1,86 @@
+{
+  "D1": {
+    "CF0": {
+      "dead": true,
+      "max_preactivation": -0.05577779781518093,
+      "post_relu_all_zero": true
+    },
+    "CF1": {
+      "dead": true,
+      "max_preactivation": -0.055777803392961275,
+      "post_relu_all_zero": true
+    },
+    "CF2": {
+      "dead": true,
+      "max_preactivation": -0.03790405476046921,
+      "post_relu_all_zero": true
+    },
+    "CF3": {
+      "dead": true,
+      "max_preactivation": -0.05577779781518093,
+      "post_relu_all_zero": true
+    },
+    "CF4": {
+      "dead": false,
+      "max_preactivation": 0.051904834479880035,
+      "post_relu_all_zero": false
+    },
+    "current_only_no_decay": {
+      "dead": true,
+      "max_preactivation": -0.055777803392961275,
+      "post_relu_all_zero": true
+    },
+    "decay_only": {
+      "dead": false,
+      "max_preactivation": 0.05190482928939655,
+      "post_relu_all_zero": false
+    },
+    "moment_only_no_decay": {
+      "dead": true,
+      "max_preactivation": -0.037904049569986664,
+      "post_relu_all_zero": true
+    }
+  },
+  "D3": {
+    "CF0": {
+      "dead": true,
+      "max_preactivation": -0.01253160632209474,
+      "post_relu_all_zero": true
+    },
+    "CF1": {
+      "dead": true,
+      "max_preactivation": -0.01253160757525544,
+      "post_relu_all_zero": true
+    },
+    "CF2": {
+      "dead": true,
+      "max_preactivation": -0.01253160632209474,
+      "post_relu_all_zero": true
+    },
+    "CF3": {
+      "dead": true,
+      "max_preactivation": -0.01253160632209474,
+      "post_relu_all_zero": true
+    },
+    "CF4": {
+      "dead": false,
+      "max_preactivation": 0.0005986586436444591,
+      "post_relu_all_zero": false
+    },
+    "current_only_no_decay": {
+      "dead": true,
+      "max_preactivation": -0.01253160757525544,
+      "post_relu_all_zero": true
+    },
+    "decay_only": {
+      "dead": false,
+      "max_preactivation": 0.0005986585837786107,
+      "post_relu_all_zero": false
+    },
+    "moment_only_no_decay": {
+      "dead": true,
+      "max_preactivation": -0.01253160757525544,
+      "post_relu_all_zero": true
+    }
+  }
+}
