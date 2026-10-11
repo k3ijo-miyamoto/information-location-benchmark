@@ -1,1 +1,11 @@
 case,counterfactual,description,dead,max_preactivation
+D1,CF0,original,True,-0.05577779781518093
+D1,CF1,no immediate decay,True,-0.055777803392961275
+D1,CF2,zero current gradient; retain prior moments,True,-0.03790405476046921
+D1,CF3,zero prior moments; retain current gradient,True,-0.05577779781518093
+D1,CF4,no content update,False,0.051904834479880035
+D3,CF0,original,True,-0.01253160632209474
+D3,CF1,no immediate decay,True,-0.01253160757525544
+D3,CF2,zero current gradient; retain prior moments,True,-0.01253160632209474
+D3,CF3,zero prior moments; retain current gradient,True,-0.01253160632209474
+D3,CF4,no content update,False,0.0005986586436444591
