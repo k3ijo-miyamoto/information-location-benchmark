@@ -2,6 +2,16 @@
 
 Publication-clean reproducibility package for **Information Location under Matched Predictive Opportunity**.
 
+## Preprint
+
+The paper is publicly archived on Zenodo:
+
+- **Miyamoto, Yukitake (2026). _Information Location under Matched Predictive Opportunity_.** Zenodo. https://doi.org/10.5281/zenodo.23297061
+- Version-specific DOI (v1): `10.5281/zenodo.23297061`
+- Concept DOI (all versions): `10.5281/zenodo.23297060`
+
+For reproducibility or priority-sensitive references to the October 11, 2026 release, cite the version-specific DOI above.
+
 This repository contains only paper-facing code, frozen configurations, compact evidence, and selected diagnostic summaries. Its Git history starts with publication assembly rather than the private research/authoring history.
 
 ## Study in one paragraph
