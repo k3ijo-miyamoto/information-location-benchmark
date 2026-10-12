@@ -44,10 +44,10 @@ The expected SHA-256 for that 8,192-record corpus is:
 `e12ebb3ab92d927d10f68e9b6e1c1e3c96878c2b54c4cab55c76df3d9538b8c8`.
 
 The original D1/D3 pre-boundary state identities are recorded in
-`evidence/diagnostics/frozen_state_manifest.json`. The binary state archives
-are **not currently mirrored in this public repository**. Therefore the public
-artifact supports exact corpus regeneration and selected-claim verification,
-but does not yet claim one-command bitwise replay of the D1/D3 continuations.
+`evidence/diagnostics/frozen_state_manifest.json`, and the verified compressed
+state archives are published under `frozen_states/`. This makes the selected
+prestates independently available. Full continuation replay still requires the
+certified GPU/software environment described below.
 See [SELECTED_DIAGNOSTIC_REPLAY.md](SELECTED_DIAGNOSTIC_REPLAY.md).
 
 ## 3. Evidence layers
@@ -80,10 +80,11 @@ and an NVIDIA GeForce RTX 4080 SUPER. A full 2,304-run rerun is not required for
 paper-level verification and bitwise portability to arbitrary hardware is not
 claimed.
 
-The original compressed 2,304-run archive is identified by the development
-snapshot but is not mirrored here as a sanitized per-run archive yet. Current
-public Stage V evidence is the official aggregate analysis plus the paper
-curve/table inputs. This limitation is explicit rather than hidden.
+A sanitized per-run Stage V archive is published as 16 JSONL parts under
+`evidence/stage_v/official_run_metrics/`. Its manifest binds the 2,304 records
+to the original source archive identity, and `scripts/verify_official_run_metrics.py`
+recomputes the official development analysis and Stage C allocation from these
+public records.
 
 ## 5. CI and tests
 
