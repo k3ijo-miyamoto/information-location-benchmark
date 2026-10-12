@@ -1,0 +1,314 @@
+{
+  "version": "generator13-learner-benchmark-0.1",
+  "decision": "LBP-A",
+  "research_question": "Under identical complete public facts and matched Bayes opportunity, how does native representation inductive bias affect finite-sample recovery across current, topology, history and interaction regimes?",
+  "canonical_version": "0.7",
+  "generator_version": "1.3.0",
+  "runtime_readiness_hash": "5af2acce6c800700962134acd8c737d53b29aa636eae80e6fc5f4b5e2d6fbf67",
+  "exact_audit_hash": "d825c50e8b7291b7c877899f10d097e9c1494e2e4e5e5418ba512619a5297d48",
+  "cells": [
+    "IS0-O1",
+    "IS0-O2",
+    "IS1-O1",
+    "IS1-O2",
+    "IS2-O1",
+    "IS2-O2",
+    "IS3-O1",
+    "IS3-O2"
+  ],
+  "opportunity_levels": {
+    "O1": "81/16384",
+    "O2": "81/4096"
+  },
+  "target": "D actual finish - original baseline finish >=120 minutes",
+  "public_authority": "complete normalized cutoff P; identical facts; Static has timestamps; Temporal adds derived sequence organization only",
+  "split_support_hash": "a5d31653680239b05c71162b58f159c46a26ce08f41b2abe16eece8724996aa2",
+  "adapter_audit_hash": "11943d17fc53ff94045ec00c9138c21994791c7b369d303b0af13a428d6c530d",
+  "model_families": [
+    "tabular",
+    "static",
+    "temporal",
+    "static_size_control"
+  ],
+  "architecture_candidates": "benchmark_configs/generator_v1.3_learner_architecture_v0.1.json",
+  "capacity_matching_policy": {
+    "target_blind": true,
+    "tolerance": 0.05,
+    "C1": [
+      "tabular",
+      "static"
+    ],
+    "C2": [
+      "temporal",
+      "static_size_control"
+    ],
+    "full_size_control_coverage": true
+  },
+  "training_protocol_anchor": {
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "epochs": 100,
+    "lr_schedule": "constant",
+    "loss": "BCEWithLogits",
+    "checkpoint": "final_epoch",
+    "early_stopping": false,
+    "class_weighting": false,
+    "augmentation": false,
+    "dropout": 0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "gradient_clipping": null,
+    "parameter_groups": "single group all parameters",
+    "initialization": "pinned PyTorch reset_parameters; endpoint padding zero; fresh model/optimizer for each N",
+    "final_train_loss": "sample-weighted mean online BCE of final epoch"
+  },
+  "device_policy": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "official_device": "cuda:0_same_GPU_family_all_models",
+    "dtype": "float64",
+    "deterministic": true,
+    "tf32": false,
+    "cublas_workspace": ":4096:8",
+    "cudnn_gru": false,
+    "cpu_parity": "required_future_gate",
+    "automatic_fallback": false
+  },
+  "primary_metric": "Brier",
+  "bayes_regret_definition": "Brier - exact_partition_BayesBrier",
+  "opportunity_recovery_definition": "(1/4-Brier)/Opportunity; no clipping",
+  "learning_curve_summary": {
+    "primary": "INR",
+    "formula": "[.5*NR128+NR512+NR2048+.5*NR8192]/3",
+    "lower_better": true,
+    "normalize_before_integration": true
+  },
+  "train_N_grid": [
+    128,
+    512,
+    2048,
+    8192
+  ],
+  "exact_evaluation_policy": {
+    "weights": "1/32 per validation or test public group",
+    "brier": "sum_g [(q_g-p_g)^2+p_g*(1-p_g)]/32",
+    "posterior": "evaluator_only",
+    "test_labels_sampled": false,
+    "logloss": "secondary; q clipped to [1e-12,1-1e-12] only for log; expected -p log q -(1-p)log(1-q)",
+    "ranking_metrics": "AUC/AP omitted",
+    "calibration": [
+      "mean(q-p)",
+      "mean(abs(q-p)) named posterior MAE, not pure calibration",
+      "10 fixed equal-width q bins; sum bin_mass*abs(mean(q-p)|bin), empty bins0, rightmost includes1"
+    ],
+    "recovery_above_one": "halt evaluator investigation if >1+1e-10; do not clip"
+  },
+  "primary_contrasts": [
+    {
+      "id": "C1",
+      "regime": "IS1",
+      "opportunity": "O1",
+      "positive_advantage": "INR(tabular)-INR(static)",
+      "reference": "tabular",
+      "challenger": "static"
+    },
+    {
+      "id": "C2",
+      "regime": "IS2",
+      "opportunity": "O1",
+      "positive_advantage": "INR(static)-INR(temporal)",
+      "reference": "static",
+      "challenger": "temporal"
+    },
+    {
+      "id": "C3",
+      "regime": "IS3",
+      "opportunity": "O1",
+      "positive_advantage": "INR(static)-INR(temporal)",
+      "reference": "static",
+      "challenger": "temporal"
+    },
+    {
+      "id": "C1",
+      "regime": "IS1",
+      "opportunity": "O2",
+      "positive_advantage": "INR(tabular)-INR(static)",
+      "reference": "tabular",
+      "challenger": "static"
+    },
+    {
+      "id": "C2",
+      "regime": "IS2",
+      "opportunity": "O2",
+      "positive_advantage": "INR(static)-INR(temporal)",
+      "reference": "static",
+      "challenger": "temporal"
+    },
+    {
+      "id": "C3",
+      "regime": "IS3",
+      "opportunity": "O2",
+      "positive_advantage": "INR(static)-INR(temporal)",
+      "reference": "static",
+      "challenger": "temporal"
+    }
+  ],
+  "negative_control_policy": {
+    "regime": "IS0",
+    "pairs": [
+      [
+        "tabular",
+        "static"
+      ],
+      [
+        "static",
+        "temporal"
+      ],
+      [
+        "static_size_control",
+        "temporal"
+      ]
+    ],
+    "margin": 0.1,
+    "rule": "abs(mean paired INR difference)>.10 flags caution; simultaneous primary-family claims not invalidated automatically; descriptive95%CI contained in [-.10,.10] supports practical equivalence; otherwise inconclusive"
+  },
+  "O1_O2_policy": "six co-primary contrasts, separate strata, no pooling, no dropping weak O1",
+  "StageV": {
+    "corpus_replicates": 6,
+    "initializations": 3,
+    "development_only": true
+  },
+  "StageC": {
+    "grid": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "cap": 32,
+    "common_R_across_cells": true,
+    "initializations": 3,
+    "formula": "min R in grid with t_(1-.05/12,R-1)*max_j(s_j)*sqrt(5/chi2_(.20,5))/sqrt(R)<=.10; otherwise R32 flagged infeasible",
+    "inputs": [
+      "six_StageV_corpus_level_paired_INR_SDs"
+    ],
+    "forbidden_inputs": [
+      "mean_effect",
+      "winner",
+      "p_value",
+      "learner_identity"
+    ],
+    "sd_inflation": 1.460972437,
+    "critical_values": {
+      "8": 3.635807422,
+      "12": 3.208122334,
+      "16": 3.036283223,
+      "24": 2.886263784,
+      "32": 2.818308158
+    },
+    "above_cap": "run fixed cap32 only with precision-limited label; never loosen margin, drop O1 or expand after StageC results",
+    "stopping": "fixed_R_before_StageC_no_optional_stopping"
+  },
+  "corpus_replication_policy": {
+    "unit": "corpus",
+    "independent_across_cells_and_stages": true,
+    "nested_prefixes": true,
+    "sampling": "frozen route_and_retain train membership only; no label/topology/history balancing",
+    "direct_conditional_sampler": false
+  },
+  "initialization_replication_policy": {
+    "count": 3,
+    "paired_across_families": true,
+    "clustered_within_corpus": true,
+    "named_pair_not_identical_weight_arrays": true,
+    "shuffle": "derive by stage/cell/corpus/init/N/epoch, omit family for shared example order"
+  },
+  "interval_method": "paired corpus means; Student-t; initialization contrasts averaged before corpus SD; fixed interval method",
+  "multiplicity_policy": "Bonferroni simultaneous95% CIs over six primary INR contrasts; superiority only if lower bound>0; material benefit only if lower bound>.10; no extra primary tests",
+  "practical_effect_threshold": 0.1,
+  "validation_usage": "32 groups reserved; exact diagnostics only; no selection, no early stopping; StageV variance from development-only test-group evaluation",
+  "mechanism_diagnostics": [
+    "future nonzero GRU gradient probe",
+    "future sequence-order logit sensitivity with no required sign",
+    "remove sequences preserves facts",
+    "edge permutation invariance",
+    "valid topology intervention affects message flow",
+    "CPU/CUDA deterministic parity"
+  ],
+  "health_gates": [
+    "finite tensors/loss/gradients/probabilities",
+    "adapter reconstruction and masks",
+    "no leakage",
+    "parameter counts and C1/C2 ratios",
+    "deterministic replay",
+    "mechanism probes; no requirement to beat constant or Static"
+  ],
+  "seed_namespace_policy": {
+    "actual_reservation": false,
+    "namespaces": [
+      "g13/architecture_gate",
+      "g13/stage_v/corpus",
+      "g13/stage_v/init",
+      "g13/stage_c/corpus",
+      "g13/stage_c/init"
+    ],
+    "derivation": "future registry-approved SHA256 domain-separated names into nonnegative63-bit seeds; reject all collisions with historical registries and each other before any run; freeze mapping once",
+    "no_bad_seed_retries": true,
+    "mechanical_failure": "invalidate/version full affected stage evidence and preregister replacement namespace; never replace for poor performance"
+  },
+  "corpus_artifact_policy": {
+    "storage": "ignored benchmark_outputs/generator13/{stage}/{cell}/{corpus}/; outside git",
+    "manifest": "SHA256 canonical payloads, normalized public fingerprints, N-prefix indices, labels separate, seed registry reference",
+    "leakage": "cell/regime/O/coordinates/posterior only controller/evaluator metadata; input builder allowlist excludes them",
+    "overwrite": false
+  },
+  "future_result_schema": "schemas/generator_v1.3_learner_result_v0.1.schema.json",
+  "future_analysis_schema": "schemas/generator_v1.3_learner_analysis_v0.1.schema.json",
+  "baselines": [
+    "constant .5",
+    "full public Bayes evaluation-only",
+    "projection oracles diagnostic only"
+  ],
+  "engineered_feature_baseline": "omitted",
+  "optional_summaries": "N50/N80 omitted to avoid nonmonotone crossing selection",
+  "secondary_contrasts": [
+    "graph INR advantage IS1 minus IS0",
+    "temporal INR advantage IS2 minus IS0",
+    "temporal INR advantage IS3 minus IS1",
+    "all IS3 pairs including size control; descriptive only"
+  ],
+  "failure_policy": "retain failures; no complete-case confirmatory contrast if required paired run missing; incomplete StageC reported, no new seeds or winner stopping",
+  "prohibited_actions": [
+    "sampled_generation",
+    "seed_reservation",
+    "model_instantiation_for_training",
+    "optimizer_creation",
+    "fit",
+    "predict",
+    "predict_proba",
+    "backward",
+    "optimizer.step",
+    "learner_performance_inspection",
+    "architecture_outcome_tuning"
+  ],
+  "next_task": "implement_freeze_generator13_learner_architecture_specs_and_no_training_mechanical_gate_reserve_StageV_seed_namespaces_only",
+  "actions": {
+    "sampled_worlds_generated": 0,
+    "seeds_reserved": 0,
+    "models_instantiated_for_training": 0,
+    "optimizer_steps": 0,
+    "learner_runs": 0,
+    "predictive_results_computed": 0
+  },
+  "realism": "R-B/C7-B/O-B/NEXT-R2; expert deferred; no Temporal victory guarantee"
+}
