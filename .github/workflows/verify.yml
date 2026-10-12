@@ -13,11 +13,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Install verification dependencies
+        run: python -m pip install -e '.[test,paper]'
+      - name: Verify publication cleanliness
+        run: python scripts/check_public_cleanliness.py
       - name: Verify paper evidence
         run: python scripts/verify_paper_evidence.py
+      - name: Verify selected diagnostics
+        run: python scripts/verify_selected_diagnostics.py
+      - name: Regenerate selected diagnostic corpus
+        run: |
+          python scripts/regenerate_corpus.py --cell IS2-O1 --corpus 0 --output /tmp/is2_o1_c0.jsonl > /tmp/corpus.json
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/corpus.json'))
+          assert x['corpus_sha256']=='e12ebb3ab92d927d10f68e9b6e1c1e3c96878c2b54c4cab55c76df3d9538b8c8'
+          print('PASS: selected corpus hash')
+          PY
+      - name: Run publication tests
+        run: python -m pytest -q
       - name: Reproduce tables
         run: python scripts/reproduce_tables.py
-      - name: Install plotting dependency
-        run: python -m pip install -r requirements-paper.txt
       - name: Reproduce figures
         run: python scripts/reproduce_figures.py
