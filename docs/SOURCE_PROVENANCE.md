@@ -45,14 +45,16 @@ The original complete Stage V results object contained 2,304 successful records.
 Its compressed Git object and decompressed JSON identity are recorded in
 `evidence/stage_v/source_hashes.json`.
 
-The full raw archive is intentionally not exposed from the private development
-repository. A sanitized per-run publication archive remains a follow-up item.
-The current public repository therefore makes aggregate Stage V evidence and
-paper plotting/table inputs available, and says so explicitly.
+A whitelisted, path-scrubbed per-run publication archive is now public under
+`evidence/stage_v/official_run_metrics/` as 16 JSONL parts. Its manifest binds
+all 2,304 records to the original decompressed archive identity, and
+`scripts/verify_official_run_metrics.py` recomputes the official development
+analysis and Stage C allocation from the public records.
 
-Selected D1/D3 optimizer prestates are similarly identified in
-`evidence/diagnostics/frozen_state_manifest.json`. Their binary archives are
-not currently mirrored publicly.
+Selected D1/D3 optimizer prestates are identified in
+`evidence/diagnostics/frozen_state_manifest.json` and mirrored under
+`frozen_states/`. The reconstruction process verified both compressed and
+decompressed hashes before publication.
 
 ## Clean-history rule
 
