@@ -1,0 +1,32 @@
+{
+  "version": "selected-boundary-state-manifest-0.2",
+  "source_development_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+  "publication_status": "state binaries are not mirrored in this public repository; exact corpus and scientific state identities are published so the prestates can be regenerated on the certified environment",
+  "cases": {
+    "D1": {
+      "run_id": "IS2-O1/c0/n8192/i1/tabular",
+      "prestate_completed_steps": 12416,
+      "boundary_update_step": 12417,
+      "source_archive_path": "research/g13_post_stage_v_diagnostics_20261011/optimizer_boundary_D1_state.pt.gz",
+      "source_archive_git_blob_sha": "4710e2fff34cbf4eabdc9639f21a21b5247b11c5",
+      "source_archive_compressed_bytes": 938033,
+      "decompressed_boundary_state_bytes": 2946125,
+      "decompressed_boundary_state_sha256": "6815d3ae86a2209b9c38f053b0447781d5d0321ee1ee4a220afadf0cb02318fc",
+      "corpus_sha256": "e12ebb3ab92d927d10f68e9b6e1c1e3c96878c2b54c4cab55c76df3d9538b8c8",
+      "official_first_content_death_step": 12417
+    },
+    "D3": {
+      "run_id": "IS2-O1/c0/n8192/i0/temporal",
+      "prestate_completed_steps": 2741,
+      "boundary_update_step": 2742,
+      "source_archive_path": "research/g13_post_stage_v_diagnostics_20261011/optimizer_boundary_D3_state.pt.gz",
+      "source_archive_git_blob_sha": "35f57db0f6a35b298ef1986087a4e704fcc0a62d",
+      "source_archive_compressed_bytes": 1715387,
+      "decompressed_boundary_state_bytes": 5675405,
+      "decompressed_boundary_state_sha256": "4ccea1a23d10cb35079bdabaf881a5c61f40478ee0a7e8dad814a907f041ac91",
+      "corpus_sha256": "e12ebb3ab92d927d10f68e9b6e1c1e3c96878c2b54c4cab55c76df3d9538b8c8",
+      "official_first_content_death_step": 2742
+    }
+  },
+  "scope": "These are selected post-hoc cases. The manifest does not turn them into prevalence estimates or family-wide causal evidence."
+}
