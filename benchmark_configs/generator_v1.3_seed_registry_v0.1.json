@@ -1,22 +1,105 @@
 {
   "version": "generator13-seed-registry-0.1",
   "decision": "SVS-A",
-  "completeness": "Publication registry for the frozen architecture-gate, Stage V corpus, and Stage V initialization namespaces.",
+  "completeness": "repository-backed collision protection, not proof that untracked/offline seeds were never used",
   "derivation": {
     "prefix": "construction-world-simulator|",
     "encoding": "UTF-8",
     "digest": "SHA256",
     "bytes": "first8",
     "byte_order": "big",
-    "mask": 9223372036854776000,
+    "mask": 9223372036854775807,
     "collision_rule": "append /retry/1, /retry/2, ... only for numeric collisions before execution"
   },
+  "historical_sources": [
+    {
+      "path": "benchmark_configs/native_world_seed_registry_v0.1.json",
+      "sha256": "8a8bbec32dc88f5159b409c4ffbe8a65be9fc17ed68052b013ff93a019f127c4"
+    },
+    {
+      "path": "benchmark_configs/native_world_seed_registry_v0.2.json",
+      "sha256": "5e165e03b1acbdce03f3f2c419e6c5bc9d16cc77e1d890282cf2063376cb14a4"
+    },
+    {
+      "path": "benchmark_configs/native_world_seed_registry_v0.3.json",
+      "sha256": "57bbd24c927a272451556f08f3ac173d1e7f273879ea21e2f9613a8dbc43e138"
+    }
+  ],
+  "historical_ranges": [
+    [
+      0,
+      99
+    ],
+    [
+      0,
+      2239
+    ],
+    [
+      100,
+      123
+    ],
+    [
+      500,
+      523
+    ],
+    [
+      600,
+      623
+    ],
+    [
+      700,
+      723
+    ],
+    [
+      1000,
+      1179
+    ],
+    [
+      2000,
+      2239
+    ],
+    [
+      5000,
+      9999
+    ],
+    [
+      10000,
+      10059
+    ],
+    [
+      30000,
+      30499
+    ],
+    [
+      31000,
+      31499
+    ],
+    [
+      40000,
+      40499
+    ],
+    [
+      50000,
+      50499
+    ]
+  ],
+  "historical_exact_values": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    901,
+    902,
+    903,
+    630001
+  ],
   "entries": [
     {
       "kind": "architecture_gate",
       "namespace": "g13/architecture_gate/init/0",
       "resolved_namespace": "g13/architecture_gate/init/0",
-      "seed": 7116437851274622000,
+      "seed": 7116437851274622344,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "mechanical_probe_only"
@@ -25,7 +108,7 @@
       "kind": "architecture_gate",
       "namespace": "g13/architecture_gate/init/1",
       "resolved_namespace": "g13/architecture_gate/init/1",
-      "seed": 5607280915490456000,
+      "seed": 5607280915490455985,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "mechanical_probe_only"
@@ -34,7 +117,7 @@
       "kind": "architecture_gate",
       "namespace": "g13/architecture_gate/init/2",
       "resolved_namespace": "g13/architecture_gate/init/2",
-      "seed": 4985209404234213000,
+      "seed": 4985209404234213604,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "mechanical_probe_only"
@@ -43,7 +126,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/0",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/0",
-      "seed": 2754891061431289300,
+      "seed": 2754891061431289097,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -52,7 +135,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/1",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/1",
-      "seed": 2641421493056087000,
+      "seed": 2641421493056086855,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -61,7 +144,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/2",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/2",
-      "seed": 7474965342408304000,
+      "seed": 7474965342408304123,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -70,7 +153,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/3",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/3",
-      "seed": 4074832578426510000,
+      "seed": 4074832578426509634,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -79,7 +162,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/4",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/4",
-      "seed": 5806563312907154000,
+      "seed": 5806563312907154757,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -88,7 +171,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O1/5",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O1/5",
-      "seed": 7533309939550824000,
+      "seed": 7533309939550824832,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -97,7 +180,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/0",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/0",
-      "seed": 9031532071112824000,
+      "seed": 9031532071112824050,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -106,7 +189,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/1",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/1",
-      "seed": 2744795595166316000,
+      "seed": 2744795595166315865,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -115,7 +198,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/2",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/2",
-      "seed": 2681541007041543000,
+      "seed": 2681541007041543026,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -124,7 +207,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/3",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/3",
-      "seed": 2785766536664449000,
+      "seed": 2785766536664449184,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -133,7 +216,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/4",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/4",
-      "seed": 5770322233041181000,
+      "seed": 5770322233041180264,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -142,7 +225,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS0-O2/5",
       "resolved_namespace": "g13/stage_v/corpus/IS0-O2/5",
-      "seed": 160018953522627300,
+      "seed": 160018953522627299,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -151,7 +234,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/0",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/0",
-      "seed": 6082873454176144000,
+      "seed": 6082873454176144217,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -160,7 +243,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/1",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/1",
-      "seed": 7303920344705033000,
+      "seed": 7303920344705032740,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -169,7 +252,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/2",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/2",
-      "seed": 6133320363982207000,
+      "seed": 6133320363982207467,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -178,7 +261,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/3",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/3",
-      "seed": 7980858466607382000,
+      "seed": 7980858466607381372,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -187,7 +270,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/4",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/4",
-      "seed": 1238626231466722300,
+      "seed": 1238626231466722390,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -196,7 +279,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O1/5",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O1/5",
-      "seed": 708101529304550900,
+      "seed": 708101529304550956,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -205,7 +288,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/0",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/0",
-      "seed": 7619117121802994000,
+      "seed": 7619117121802993401,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -214,7 +297,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/1",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/1",
-      "seed": 1152965201156528400,
+      "seed": 1152965201156528303,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -223,7 +306,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/2",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/2",
-      "seed": 5091024827946047000,
+      "seed": 5091024827946047457,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -232,7 +315,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/3",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/3",
-      "seed": 543332417153389300,
+      "seed": 543332417153389309,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -241,7 +324,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/4",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/4",
-      "seed": 7883365333032350000,
+      "seed": 7883365333032350184,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -250,7 +333,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS1-O2/5",
       "resolved_namespace": "g13/stage_v/corpus/IS1-O2/5",
-      "seed": 8244207567714362000,
+      "seed": 8244207567714362036,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -259,7 +342,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/0",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/0",
-      "seed": 5860971395318913000,
+      "seed": 5860971395318913417,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -268,7 +351,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/1",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/1",
-      "seed": 2150387254138379800,
+      "seed": 2150387254138379897,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -277,7 +360,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/2",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/2",
-      "seed": 4865086382314423000,
+      "seed": 4865086382314423054,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -286,7 +369,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/3",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/3",
-      "seed": 6695470688325123000,
+      "seed": 6695470688325122900,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -295,7 +378,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/4",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/4",
-      "seed": 5229448536742101000,
+      "seed": 5229448536742101304,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -304,7 +387,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O1/5",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O1/5",
-      "seed": 7208656196473085000,
+      "seed": 7208656196473084879,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -313,7 +396,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/0",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/0",
-      "seed": 4526146606526572000,
+      "seed": 4526146606526572217,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -322,7 +405,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/1",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/1",
-      "seed": 146169677052320350,
+      "seed": 146169677052320345,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -331,7 +414,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/2",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/2",
-      "seed": 8743035413834644000,
+      "seed": 8743035413834644818,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -340,7 +423,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/3",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/3",
-      "seed": 4504387241136524000,
+      "seed": 4504387241136523802,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -349,7 +432,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/4",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/4",
-      "seed": 8565117719076710000,
+      "seed": 8565117719076710209,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -358,7 +441,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS2-O2/5",
       "resolved_namespace": "g13/stage_v/corpus/IS2-O2/5",
-      "seed": 2379669557353774000,
+      "seed": 2379669557353773867,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -367,7 +450,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/0",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/0",
-      "seed": 3546579911501013000,
+      "seed": 3546579911501013192,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -376,7 +459,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/1",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/1",
-      "seed": 9157270721696830000,
+      "seed": 9157270721696830199,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -385,7 +468,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/2",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/2",
-      "seed": 8623115488132813000,
+      "seed": 8623115488132812905,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -394,7 +477,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/3",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/3",
-      "seed": 2816905993960854500,
+      "seed": 2816905993960854777,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -403,7 +486,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/4",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/4",
-      "seed": 8218581843536529000,
+      "seed": 8218581843536529598,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -412,7 +495,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O1/5",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O1/5",
-      "seed": 7083783608135465000,
+      "seed": 7083783608135464776,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -421,7 +504,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/0",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/0",
-      "seed": 9036683279524297000,
+      "seed": 9036683279524296258,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -430,7 +513,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/1",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/1",
-      "seed": 2777708157932310500,
+      "seed": 2777708157932310656,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -439,7 +522,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/2",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/2",
-      "seed": 2790943425243800000,
+      "seed": 2790943425243800008,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -448,7 +531,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/3",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/3",
-      "seed": 3772539124261368300,
+      "seed": 3772539124261368462,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -457,7 +540,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/4",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/4",
-      "seed": 4689767985469837000,
+      "seed": 4689767985469837651,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -466,7 +549,7 @@
       "kind": "stage_v_corpus",
       "namespace": "g13/stage_v/corpus/IS3-O2/5",
       "resolved_namespace": "g13/stage_v/corpus/IS3-O2/5",
-      "seed": 577991372610233900,
+      "seed": 577991372610233884,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -475,7 +558,7 @@
       "kind": "stage_v_init",
       "namespace": "g13/stage_v/init/0",
       "resolved_namespace": "g13/stage_v/init/0",
-      "seed": 2651834014579762700,
+      "seed": 2651834014579762910,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -484,7 +567,7 @@
       "kind": "stage_v_init",
       "namespace": "g13/stage_v/init/1",
       "resolved_namespace": "g13/stage_v/init/1",
-      "seed": 1582603342154018300,
+      "seed": 1582603342154018316,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
@@ -493,7 +576,7 @@
       "kind": "stage_v_init",
       "namespace": "g13/stage_v/init/2",
       "resolved_namespace": "g13/stage_v/init/2",
-      "seed": 8576306408727091000,
+      "seed": 8576306408727090716,
       "collision_suffix": 0,
       "development_only": true,
       "usage": "reserved_not_consumed"
