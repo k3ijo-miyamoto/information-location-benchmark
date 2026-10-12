@@ -1,0 +1,19 @@
+{
+  "version": "selected-boundary-state-public-0.2",
+  "items": {
+    "D1": {
+      "path": "frozen_states/D1_preboundary_state.pt.gz",
+      "compressed_bytes": 938033,
+      "compressed_sha256": "9b1d7cc8bd0f394d943941fd95e92f352481e324eb06b521a87e2818c69261be",
+      "decompressed_bytes": 2946125,
+      "decompressed_sha256": "6815d3ae86a2209b9c38f053b0447781d5d0321ee1ee4a220afadf0cb02318fc"
+    },
+    "D3": {
+      "path": "frozen_states/D3_preboundary_state.pt.gz",
+      "compressed_bytes": 1715387,
+      "compressed_sha256": "782576ce6514b3b283c33bed56d32bbd41cf2578600f93faf81a3f61e3e4e2eb",
+      "decompressed_bytes": 5675405,
+      "decompressed_sha256": "4ccea1a23d10cb35079bdabaf881a5c61f40478ee0a7e8dad814a907f041ac91"
+    }
+  }
+}
