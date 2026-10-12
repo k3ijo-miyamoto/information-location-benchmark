@@ -74,7 +74,7 @@ python scripts/rerun_single_official.py \
   --cell IS2-O1 --corpus 0 --N 8192 --init 1 --family tabular
 ```
 
-The strict runner intentionally requires the certified original environment:
+The strict official-run and selected-intervention replay paths intentionally require the certified original environment:
 Python 3.11.9, PyTorch 2.13.0+cu130, CUDA 13.0, float64 deterministic execution,
 and an NVIDIA GeForce RTX 4080 SUPER. A full 2,304-run rerun is not required for
 paper-level verification and bitwise portability to arbitrary hardware is not
@@ -105,6 +105,7 @@ python -m pip install -e '.[test,paper]'
 python scripts/check_public_cleanliness.py
 python scripts/verify_paper_evidence.py
 python scripts/verify_selected_diagnostics.py
+python scripts/verify_official_run_metrics.py
 python -m pytest -q
 python scripts/reproduce_tables.py
 python scripts/reproduce_figures.py
