@@ -30,15 +30,13 @@ The original D1/D3 compressed state files are identified in
 `evidence/diagnostics/frozen_state_manifest.json`, including source Git blob
 identity, decompressed byte count, and decompressed SHA-256.
 
-They are not currently mirrored as binaries in this public repository. This is
-an explicit artifact-availability limitation, not an assertion that a replay
-has been performed from the public repository alone.
+They are now mirrored under `frozen_states/`. The publication reconstruction
+workflow verified each compressed archive and its decompressed SHA-256 against
+the source transport manifest before committing the files.
 
-A fully self-contained selected-replay release remains a follow-up artifact
-task. Until those state binaries (or an independently verified deterministic
-state-regeneration path) are public, the repository supports **claim
-verification and exact corpus regeneration**, but not one-command bitwise
-replay of the D1/D3 interventions.
+The repository therefore contains the exact selected prestates needed for
+D1/D3 continuation replay. The remaining portability boundary is the certified
+GPU/software environment, not state availability.
 
 ## Environment boundary
 
