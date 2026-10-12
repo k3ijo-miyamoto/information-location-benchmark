@@ -35,8 +35,23 @@ workflow verified each compressed archive and its decompressed SHA-256 against
 the source transport manifest before committing the files.
 
 The repository therefore contains the exact selected prestates needed for
-D1/D3 continuation replay. The remaining portability boundary is the certified
-GPU/software environment, not state availability.
+D1/D3 continuation replay. Publication-facing replay scripts are provided:
+
+```bash
+python scripts/replay_d1_persistent_lr.py --output /tmp/d1-persistent.json
+python scripts/replay_d1_one_step_lr.py --output /tmp/d1-one-step.json
+python scripts/replay_d3_persistent_lr.py --output /tmp/d3-persistent.json
+```
+
+Each replay regenerates and hashes the selected corpus, verifies the frozen
+state archive, resumes from the exact selected pre-boundary optimizer/model
+state, executes the documented learning-rate schedule, and checks the final
+model hash, first content-death step, and final exact normalized Brier recovery
+against the committed selected-case evidence.
+
+The remaining portability boundary is the certified GPU/software environment,
+not state availability. The three full continuations are therefore not run by
+hosted CPU CI.
 
 ## Environment boundary
 
