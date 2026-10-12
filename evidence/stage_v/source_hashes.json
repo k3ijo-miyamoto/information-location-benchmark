@@ -7,7 +7,10 @@
     "compressed_bytes": 1415242,
     "decompressed_json_sha256": "f4c224250b2b49329845bafb9faf773ae6a41c8cfa36ada9e8912bc14c85fd4e",
     "record_count": 2304,
-    "sanitized_public_per_run_archive": null,
-    "publication_status": "not yet mirrored; official aggregate analysis and paper plotting/table inputs are public"
+    "sanitized_public_per_run_archive": "evidence/stage_v/official_run_metrics/",
+    "publication_status": "published as 16 whitelisted JSONL parts; verifier recomputes official development analysis and Stage C allocation",
+    "sanitized_record_count": 2304,
+    "sanitized_part_count": 16,
+    "sanitized_concatenated_jsonl_sha256": "b1c05997e69133e161efc62d61aa5e3605643094ccddb81b5d7220fd1821be93"
   }
 }
