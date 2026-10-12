@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
-"""Verify selected diagnostic claims from committed publication evidence only."""
-import json, math
+"""Verify selected diagnostic claims and published frozen-state identities."""
+import gzip, hashlib, json, math
 from pathlib import Path
+
 ROOT=Path(__file__).resolve().parents[1]
-def load(p): return json.loads((ROOT/p).read_text(encoding="utf-8"))
-def close(a,b,tol=1e-12): return math.isclose(float(a),float(b),rel_tol=0.0,abs_tol=tol)
+
+def load(p):
+    return json.loads((ROOT/p).read_text(encoding="utf-8"))
+
+def close(a,b,tol=1e-12):
+    return math.isclose(float(a),float(b),rel_tol=0.0,abs_tol=tol)
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
 
 boundary=load("evidence/diagnostics/optimizer_boundary_summary.json")
 assert boundary["cases"]["D1"]["first_death_step"]==12417
@@ -33,7 +41,18 @@ assert close(thr["cases"]["D3"]["midpoint"],0.00003206404788911299)
 assert close(thr["cases"]["D3"]["ratios"]["0.0001"]["normalized_midpoint"],3.118757817036381)
 
 states=load("evidence/diagnostics/frozen_state_manifest.json")
-assert states["cases"]["D1"]["decompressed_boundary_state_sha256"]==d1["binding"]["archive_sha256"]
-assert states["cases"]["D3"]["decompressed_boundary_state_sha256"]==d3["binding"]["archive_sha256"]
+published=load("frozen_states/manifest.json")
+for case,summary in (("D1",d1),("D3",d3)):
+    expected=states["cases"][case]
+    item=published["items"][case]
+    path=ROOT/item["path"]
+    compressed=path.read_bytes()
+    raw=gzip.decompress(compressed)
+    assert len(compressed)==item["compressed_bytes"]==expected["public_compressed_bytes"]
+    assert sha256(compressed)==item["compressed_sha256"]==expected["public_compressed_sha256"]
+    assert len(raw)==item["decompressed_bytes"]==expected["decompressed_boundary_state_bytes"]
+    assert sha256(raw)==item["decompressed_sha256"]==expected["decompressed_boundary_state_sha256"]
+    assert item["decompressed_sha256"]==summary["binding"]["archive_sha256"]
+
 assert states["cases"]["D1"]["corpus_sha256"]==states["cases"]["D3"]["corpus_sha256"]
-print("PASS: selected diagnostic summaries, interventions, thresholds, and state identities")
+print("PASS: selected diagnostic summaries, interventions, thresholds, and published frozen-state bytes")
