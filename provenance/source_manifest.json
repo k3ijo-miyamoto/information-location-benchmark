@@ -1,8 +1,8 @@
 {
-  "version": "public-source-provenance-0.2",
+  "version": "public-source-provenance-0.3",
   "generated_from_manifest": "paper/information_location_study/PUBLIC_REPRO_REPO_MANIFEST_V0.1.csv",
   "source_development_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
-  "public_repository_head_at_generation": "d26a37d9c32132518db3f8913d6a33b53bf7921b",
+  "public_repository_head_at_generation": "bf6e4e166f7ae65bd354ffd3a28b3005c3fdf622",
   "note": "Git blob SHA equality is used only to identify byte-identical copies. Adapted/generated publication files intentionally differ. The private development repository itself is not required for paper-level verification.",
   "entries": [
     {
@@ -73,14 +73,14 @@
     },
     {
       "public_path": "construction_world/benchmark/__init__.py",
-      "disposition": "COPY",
+      "disposition": "ADAPT",
       "category": "packaging",
       "source_path": "construction_world/benchmark/__init__.py",
       "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
       "source_git_blob_sha": "eebfa6f1a144e00893a5e2a31fdd517a9bed5348",
       "public_git_blob_sha": "d2da5dcf994da6c7f446405de4283e4e40ad6d2e",
       "byte_identical": false,
-      "note": "Benchmark package marker"
+      "note": "Publication package marker; no scientific semantics."
     },
     {
       "public_path": "construction_world/v07/models.py",
@@ -260,14 +260,14 @@
     },
     {
       "public_path": "construction_world/benchmark/native_no_training_gate_v13.py",
-      "disposition": "COPY",
+      "disposition": "ADAPT",
       "category": "learner",
       "source_path": "construction_world/benchmark/native_no_training_gate_v13.py",
       "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
       "source_git_blob_sha": "18c0d187b1e6e322d8daf0202f8fca7d6baa256a",
       "public_git_blob_sha": "afbbe680af219b73d510e5e2fe0489d35e8a47bf",
       "byte_identical": false,
-      "note": "Parameter digest and no-training mechanical helpers"
+      "note": "Reduced to canonical parameter hashing helpers used by public training/replay code."
     },
     {
       "public_path": "construction_world/benchmark/native_stage_v_batch_v13.py",
@@ -441,8 +441,8 @@
       "source_path": "benchmark_configs/generator_v1.3_seed_registry_v0.1.json",
       "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
       "source_git_blob_sha": "bbd77dea5177cfad3565631d953390e2187c6b2c",
-      "public_git_blob_sha": "c29bb931ab7251753859baa08897df83d65a0180",
-      "byte_identical": false,
+      "public_git_blob_sha": "bbd77dea5177cfad3565631d953390e2187c6b2c",
+      "byte_identical": true,
       "note": "Frozen Stage V corpus/init seeds"
     },
     {
@@ -601,14 +601,14 @@
     },
     {
       "public_path": "evidence/paper/table6_interventions_public.csv",
-      "disposition": "COPY",
+      "disposition": "SANITIZE",
       "category": "evidence",
       "source_path": "paper/information_location_study/tables/table6_interventions.csv",
       "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
       "source_git_blob_sha": "8c6873be10251ddcf4b252c7f4c92f285c449a3d",
       "public_git_blob_sha": "5ac3ec95614cb6968878df726ba70de412241d22",
       "byte_identical": false,
-      "note": "Selected intervention endpoints"
+      "note": "Header generalized from death_step to content_inactive_step; numerical rows unchanged."
     },
     {
       "public_path": "evidence/paper/table6_boundary_context.csv",
@@ -623,14 +623,14 @@
     },
     {
       "public_path": "evidence/paper/table1_regimes.csv",
-      "disposition": "COPY",
+      "disposition": "SANITIZE",
       "category": "evidence",
       "source_path": "paper/information_location_study/tables/v03/table1_regimes.csv",
       "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
       "source_git_blob_sha": "cc18e7301a6ede44114bb2603a892536078fab9f",
       "public_git_blob_sha": "d67fec11a54c37f1f42603b522a2805f514aed57",
       "byte_identical": false,
-      "note": "Regime/control summary"
+      "note": "ASCII punctuation normalization only; scientific values unchanged."
     },
     {
       "public_path": "evidence/paper/table2_learners.csv",
@@ -727,7 +727,7 @@
       "source_path": null,
       "source_commit": null,
       "source_git_blob_sha": null,
-      "public_git_blob_sha": "a1412d376e5ea4b502d0dafe3a18e9a9a116a126",
+      "public_git_blob_sha": "36074c71d0588d3f2a99910d5d2126a5afb12f48",
       "byte_identical": false,
       "note": "Plain-language scope, quickstart, paper linkage"
     },
@@ -771,7 +771,7 @@
       "source_path": null,
       "source_commit": null,
       "source_git_blob_sha": null,
-      "public_git_blob_sha": "4353c64df7f3a17bf447cfd99ff2c7a9dea012db",
+      "public_git_blob_sha": "98b977343f1816abff973a81f0cbe2c343f275ba",
       "byte_identical": false,
       "note": "Three reproducibility levels and commands"
     },
@@ -826,9 +826,52 @@
       "source_path": null,
       "source_commit": null,
       "source_git_blob_sha": null,
-      "public_git_blob_sha": "8ef9e7ed24749d1c6f4dec947dd3235107cc7d78",
+      "public_git_blob_sha": "04a950f189ae47f70b6d2648ad1bf95a1dfa58da",
       "byte_identical": false,
       "note": "CPU verification CI; no claim of full GPU rerun"
+    }
+  ],
+  "publication_v02_additions": [
+    {
+      "public_path": "evidence/stage_v/official_run_metrics/",
+      "disposition": "GENERATE",
+      "source_path": "research/g13_post_stage_v_diagnostics_20261011/official_results.json.gz",
+      "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+      "source_git_blob_sha": "ce4317055e4d13c95aa5a3ad6a6f556536c33f5f",
+      "source_decompressed_sha256": "f4c224250b2b49329845bafb9faf773ae6a41c8cfa36ada9e8912bc14c85fd4e",
+      "public_manifest": "evidence/stage_v/official_run_metrics/manifest.json",
+      "record_count": 2304,
+      "note": "Whitelisted per-run publication export; private/local provenance removed; official analysis is recomputed from public records."
+    },
+    {
+      "public_path": "frozen_states/D1_preboundary_state.pt.gz",
+      "disposition": "COPY_BINARY",
+      "source_path": "research/g13_post_stage_v_diagnostics_20261011/optimizer_boundary_D1_state.pt.gz",
+      "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+      "source_git_blob_sha": "4710e2fff34cbf4eabdc9639f21a21b5247b11c5",
+      "public_git_blob_sha": "4710e2fff34cbf4eabdc9639f21a21b5247b11c5",
+      "byte_identical": true
+    },
+    {
+      "public_path": "frozen_states/D3_preboundary_state.pt.gz",
+      "disposition": "COPY_BINARY",
+      "source_path": "research/g13_post_stage_v_diagnostics_20261011/optimizer_boundary_D3_state.pt.gz",
+      "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+      "source_git_blob_sha": "35f57db0f6a35b298ef1986087a4e704fcc0a62d",
+      "public_git_blob_sha": "35f57db0f6a35b298ef1986087a4e704fcc0a62d",
+      "byte_identical": true
+    },
+    {
+      "public_path": "scripts/replay_selected_intervention.py",
+      "disposition": "ADAPT",
+      "source_paths": [
+        "research/g13_post_stage_v_diagnostics_20261011/run_late_lr_boundary_intervention.py",
+        "research/g13_post_stage_v_diagnostics_20261011/run_one_step_lr_rescue.py",
+        "research/g13_post_stage_v_diagnostics_20261011/run_d3_late_lr_boundary_intervention.py"
+      ],
+      "source_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+      "public_git_blob_sha": "7eecf3fe667d08a2c3577b0002cb6d5ee353f150",
+      "note": "Publication-facing strict replay consolidating the three frozen intervention schedules; removes private path/history assertions and uses public deterministic corpus regeneration plus published frozen prestates."
     }
   ]
 }
