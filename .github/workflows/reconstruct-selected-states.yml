@@ -1,0 +1,67 @@
+name: reconstruct-selected-state-archives
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.repro_import/TRIGGER_STATES_BUILD'
+
+permissions:
+  contents: write
+
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct and verify selected state archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64, gzip, hashlib, json
+          from pathlib import Path
+
+          src=Path('.repro_import/states')
+          manifest=json.loads((src/'manifest.json').read_text())
+          out=Path('frozen_states')
+          out.mkdir(exist_ok=True)
+          mapping={'D1':'D1_preboundary_state.pt.gz','D3':'D3_preboundary_state.pt.gz'}
+          published={'version':'selected-boundary-state-public-0.2','items':{}}
+          for case,item in manifest['items'].items():
+              chunks=[]
+              for p in item['parts']:
+                  text=(src/p['path']).read_text(encoding='ascii').strip()
+                  assert len(text)==p['chars']
+                  assert hashlib.sha256(text.encode()).hexdigest()==p['sha256']
+                  chunks.append(text)
+              raw=base64.b64decode(''.join(chunks))
+              assert len(raw)==item['compressed_bytes']
+              assert hashlib.sha256(raw).hexdigest()==item['compressed_sha256']
+              inner=gzip.decompress(raw)
+              assert len(inner)==item['decompressed_bytes']
+              assert hashlib.sha256(inner).hexdigest()==item['decompressed_sha256']
+              target=out/mapping[case]
+              target.write_bytes(raw)
+              published['items'][case]={
+                  'path':str(target),
+                  'compressed_bytes':len(raw),
+                  'compressed_sha256':hashlib.sha256(raw).hexdigest(),
+                  'decompressed_bytes':len(inner),
+                  'decompressed_sha256':hashlib.sha256(inner).hexdigest(),
+              }
+          (out/'manifest.json').write_text(json.dumps(published,indent=2)+'\n')
+          print(json.dumps(published,indent=2))
+          PY
+      - name: Commit reconstructed archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frozen_states
+          git rm -r .repro_import/states
+          git commit -m "repro: publish selected D1/D3 frozen prestates"
+          git push origin HEAD:main
