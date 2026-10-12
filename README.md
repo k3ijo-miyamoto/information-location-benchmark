@@ -1,5 +1,7 @@
 # Information Location Benchmark
 
+[![verify-publication-artifacts](https://github.com/k3ijo-miyamoto/information-location-benchmark/actions/workflows/verify.yml/badge.svg)](https://github.com/k3ijo-miyamoto/information-location-benchmark/actions/workflows/verify.yml)
+
 Publication-clean reproducibility package for **Information Location under Matched Predictive Opportunity**.
 
 ## Preprint
@@ -37,6 +39,20 @@ python scripts/reproduce_figures.py
 ```
 
 See [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) and [docs/SOURCE_PROVENANCE.md](docs/SOURCE_PROVENANCE.md).
+
+## Reproducibility v0.2 status
+
+The public artifact now includes:
+
+- a sanitized per-run archive for all **2,304** Stage V development runs;
+- a verifier that recomputes the stored primary INR analysis and Stage C allocation from those public records;
+- published compressed D1/D3 pre-boundary optimizer/model states with compressed and decompressed SHA-256 identities;
+- deterministic regeneration of the selected IS2-O1 corpus;
+- strict D1/D3 continuation replay scripts for the certified original CUDA environment;
+- source-to-public provenance manifests and publication-cleanliness checks;
+- CPU CI covering paper evidence, per-run archive reconstruction, frozen-state identity checks, tests, and table/figure regeneration.
+
+The full selected optimizer continuations are not run in hosted CPU CI because the paper does not claim bitwise portability beyond the certified original GPU/software environment.
 
 ## Evidence layers
 
