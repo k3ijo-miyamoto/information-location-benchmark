@@ -1,0 +1,133 @@
+{
+  "version": "official-run-metrics-public-0.2",
+  "source_development_commit": "d2170862637668300a337e561aef77e3c62ba0b2",
+  "source_path": "research/g13_post_stage_v_diagnostics_20261011/official_results.json.gz",
+  "source_decompressed_sha256": "f4c224250b2b49329845bafb9faf773ae6a41c8cfa36ada9e8912bc14c85fd4e",
+  "record_count": 2304,
+  "part_count": 16,
+  "concatenated_jsonl_sha256": "b1c05997e69133e161efc62d61aa5e3605643094ccddb81b5d7220fd1821be93",
+  "whitelist": {
+    "top_level": [
+      "run_id",
+      "identity",
+      "result",
+      "metadata"
+    ],
+    "result": [
+      "runtime_seconds",
+      "status"
+    ],
+    "metadata": [
+      "evaluation",
+      "example_presentations",
+      "final_parameters_finite",
+      "final_state_dict_sha256",
+      "final_train_loss",
+      "initialization_seed",
+      "max_allocated_gpu_memory_bytes",
+      "mechanism_diagnostics",
+      "optimizer_steps",
+      "parameter_count",
+      "predictions"
+    ]
+  },
+  "parts": [
+    {
+      "path": "part-00.jsonl",
+      "records": 144,
+      "bytes": 409504,
+      "sha256": "a870c40b688269954549d3d16e3bbbbd29f03d89ba6eab376e7c03aa9dbf8624"
+    },
+    {
+      "path": "part-01.jsonl",
+      "records": 144,
+      "bytes": 409540,
+      "sha256": "4ae8738a10b7e6807f6f7d97d2b6f1a3df0f02ef564faf6e99f4b59cba7b78c4"
+    },
+    {
+      "path": "part-02.jsonl",
+      "records": 144,
+      "bytes": 408995,
+      "sha256": "cf6ba237a0441f724b8ffec2ea788aca54214086163a76e9aed24cf67af0b5fd"
+    },
+    {
+      "path": "part-03.jsonl",
+      "records": 144,
+      "bytes": 408982,
+      "sha256": "b362f1a8707b926b9f6522f61890cffd7611e00373173fdc46cb55c219eedaf1"
+    },
+    {
+      "path": "part-04.jsonl",
+      "records": 144,
+      "bytes": 409648,
+      "sha256": "f370e719596647677a9c2148728b98b9bb7336c29aa44b7d9a3c82b71015a300"
+    },
+    {
+      "path": "part-05.jsonl",
+      "records": 144,
+      "bytes": 409755,
+      "sha256": "c38da0e68748e5df42a8a11a9d3cab8dceb87c863714c2f771e62d314338f881"
+    },
+    {
+      "path": "part-06.jsonl",
+      "records": 144,
+      "bytes": 408651,
+      "sha256": "67a30544272c25e6dbb3cedbbf47f406bd381306139009274605f73b44a817fa"
+    },
+    {
+      "path": "part-07.jsonl",
+      "records": 144,
+      "bytes": 408697,
+      "sha256": "bc91fc2ee7805a2bd59bea1a8b798f1c1cba320495764e77cd01a4affcbabe6c"
+    },
+    {
+      "path": "part-08.jsonl",
+      "records": 144,
+      "bytes": 408949,
+      "sha256": "52a2ee7bfc645c304743fa305aad70bc8aa7df2076a1b9267f653ea57aa546de"
+    },
+    {
+      "path": "part-09.jsonl",
+      "records": 144,
+      "bytes": 408859,
+      "sha256": "a224ce1438e480b3f466ea81e88778ff83676cfbd60fd6c951eea08131bce7c1"
+    },
+    {
+      "path": "part-10.jsonl",
+      "records": 144,
+      "bytes": 408292,
+      "sha256": "781e6f60f075f47933ffeebd867866027a7aab038a69523a4524e6edc25fc1bf"
+    },
+    {
+      "path": "part-11.jsonl",
+      "records": 144,
+      "bytes": 408138,
+      "sha256": "404583e821fd6fb422ad5c86ede9814d3d5c6e54b5478858db83e7119a9b0adc"
+    },
+    {
+      "path": "part-12.jsonl",
+      "records": 144,
+      "bytes": 409846,
+      "sha256": "d9688286f9a5d50263a63d4dfe79d2b740fe157d2edb33918e8b00d235412d5b"
+    },
+    {
+      "path": "part-13.jsonl",
+      "records": 144,
+      "bytes": 408811,
+      "sha256": "904d09ea3753f87be396d532b3f69e04a9798481ac040b4c482c6c5dbe1a949d"
+    },
+    {
+      "path": "part-14.jsonl",
+      "records": 144,
+      "bytes": 408187,
+      "sha256": "69a703ae4dd5297fa0733e4b3e6443dc188cda3c56f4cf0a9187f72c3779ab94"
+    },
+    {
+      "path": "part-15.jsonl",
+      "records": 144,
+      "bytes": 408241,
+      "sha256": "7d1fcbe7fdd3cbdb63521365bcbf7f1e6f3e5df331c5a164fef9a86792be2ad0"
+    }
+  ],
+  "scope": "Development-stage records for the specified learner-optimizer systems; not confirmatory Stage C evidence."
+}
