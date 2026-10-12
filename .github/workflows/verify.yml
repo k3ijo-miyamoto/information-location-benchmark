@@ -32,6 +32,8 @@ jobs:
           assert x['corpus_sha256']=='e12ebb3ab92d927d10f68e9b6e1c1e3c96878c2b54c4cab55c76df3d9538b8c8'
           print('PASS: selected corpus hash')
           PY
+      - name: Compile strict replay scripts
+        run: python -m py_compile scripts/replay_selected_intervention.py scripts/replay_d1_persistent_lr.py scripts/replay_d1_one_step_lr.py scripts/replay_d3_persistent_lr.py
       - name: Run publication tests
         run: python -m pytest -q
       - name: Reproduce tables
