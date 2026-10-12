@@ -25,6 +25,7 @@ The core paper checks are CPU-only and use the committed evidence:
 ```bash
 python scripts/verify_paper_evidence.py
 python scripts/verify_selected_diagnostics.py
+python scripts/verify_official_run_metrics.py
 python scripts/reproduce_tables.py
 ```
 
@@ -58,6 +59,16 @@ python scripts/rerun_single_official.py \
 ```
 
 The official training implementation intentionally requires the certified original CUDA environment; paper-level verification does not.
+
+Selected intervention replays use the published frozen prestates:
+
+```bash
+python scripts/replay_d1_persistent_lr.py --output /tmp/d1-persistent.json
+python scripts/replay_d1_one_step_lr.py --output /tmp/d1-one-step.json
+python scripts/replay_d3_persistent_lr.py --output /tmp/d3-persistent.json
+```
+
+These strict replays require the same certified GPU/software environment as the original selected continuations.
 
 ## Reproduction levels
 
