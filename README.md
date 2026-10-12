@@ -24,6 +24,7 @@ The core paper checks are CPU-only and use the committed evidence:
 
 ```bash
 python scripts/verify_paper_evidence.py
+python scripts/verify_selected_diagnostics.py
 python scripts/reproduce_tables.py
 ```
 
@@ -34,7 +35,7 @@ python -m pip install -r requirements-paper.txt
 python scripts/reproduce_figures.py
 ```
 
-See [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+See [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) and [docs/SOURCE_PROVENANCE.md](docs/SOURCE_PROVENANCE.md).
 
 ## Evidence layers
 
@@ -61,7 +62,7 @@ The official training implementation intentionally requires the certified origin
 ## Reproduction levels
 
 1. **Paper verification:** exact design and reported aggregate values from committed evidence; CPU-friendly.
-2. **Selected diagnostics:** committed selected-case summaries and publication-facing trajectory data.
+2. **Selected diagnostics:** committed selected-case summaries, exact corpus regeneration, state identities, and publication-facing trajectory data. The original pre-boundary state binaries are not yet mirrored publicly, so one-command bitwise intervention replay is not yet claimed.
 3. **Official training rerun:** source/configuration is provided; requires the pinned official GPU/software environment for the strict path.
 
 ## Scope boundaries
