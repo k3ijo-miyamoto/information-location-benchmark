@@ -21,9 +21,11 @@ jobs:
         run: python scripts/verify_paper_evidence.py
       - name: Verify selected diagnostics
         run: python scripts/verify_selected_diagnostics.py
+      - name: Verify sanitized 2,304-run archive
+        run: python scripts/verify_official_run_metrics.py
       - name: Regenerate selected diagnostic corpus
         run: |
-          python scripts/regenerate_corpus.py --cell IS2-O1 --corpus 0 --output /tmp/is2_o1_c0.jsonl > /tmp/corpus.json
+          python scripts/regenerate_corpus.py --cell IS2-O1 --corpus 0 --output /tmp/is2_o1_c0.jsonl | tee /tmp/corpus.json
           python - <<'PY'
           import json
           x=json.load(open('/tmp/corpus.json'))
