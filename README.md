@@ -62,8 +62,8 @@ The official training implementation intentionally requires the certified origin
 ## Reproduction levels
 
 1. **Paper verification:** exact design and reported aggregate values from committed evidence; CPU-friendly.
-2. **Selected diagnostics:** committed selected-case summaries, exact corpus regeneration, published D1/D3 frozen prestates, and publication-facing trajectory data.
-3. **Official training rerun:** source/configuration is provided; requires the pinned official GPU/software environment for the strict path.
+2. **Selected diagnostics:** committed selected-case summaries, exact corpus regeneration, published D1/D3 frozen prestates, and strict continuation replay scripts for the certified GPU environment.
+3. **Official training rerun:** source/configuration and sanitized 2,304-run public metrics are provided; strict training/replay requires the pinned official GPU/software environment.
 
 ## Scope boundaries
 
