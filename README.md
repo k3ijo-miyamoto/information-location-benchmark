@@ -62,7 +62,7 @@ The official training implementation intentionally requires the certified origin
 ## Reproduction levels
 
 1. **Paper verification:** exact design and reported aggregate values from committed evidence; CPU-friendly.
-2. **Selected diagnostics:** committed selected-case summaries, exact corpus regeneration, state identities, and publication-facing trajectory data. The original pre-boundary state binaries are not yet mirrored publicly, so one-command bitwise intervention replay is not yet claimed.
+2. **Selected diagnostics:** committed selected-case summaries, exact corpus regeneration, published D1/D3 frozen prestates, and publication-facing trajectory data.
 3. **Official training rerun:** source/configuration is provided; requires the pinned official GPU/software environment for the strict path.
 
 ## Scope boundaries
